@@ -1,7 +1,7 @@
 // It's called to add sections 
 var nextVegetation = 1;
 var myMap = {};
-myMap['nextSubArray'] = 1;
+myMap['nextSubArray'] = 1; 
 
 function AddElement(nameElement){
 	var file = "addExtraFieldsData.php";
