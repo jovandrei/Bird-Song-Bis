@@ -6,5 +6,5 @@
 
 	<body id="public">	
 		<?php include('/php/ResearcherSections/_ResearcherSection.php'); ?>
-	</body>
+	</body> 
 </html>
