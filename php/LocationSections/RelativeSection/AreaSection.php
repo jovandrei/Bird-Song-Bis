@@ -1,18 +1,18 @@
 <li class="complex notranslate">
 
 	<label class="desc2" for="Area_id">IN AREA</label>
-	<?php echo options_section_in("Area"); ?>
+	<?php echo options_section_in2("Area", $index); ?>
 		
 	<div class='more-content-in'>
 		<span>
-			<label class ="nojump" for="areaName_id">Name</label>
-			<input id="areaName_id" name="areaName" type="text" class="field text addr" value="" size="32" />
+			<label class ="nojump" for="areaName<?php echo "_".$index?>_id">Name</label>
+			<input id="areaName<?php echo "_".$index?>_id" name="areaName" type="text" class="field text addr" value="" size="32" />
 		</span>
 		
 		<span>
-			<textarea id="areaDescription_id"  name="areaDescription" class="field select addr" spellcheck="true" rows="1" 
+			<textarea id="areaDescription<?php echo "_".$index?>_id"  name="areaDescription" class="field select addr" spellcheck="true" rows="1" 
 			cols="65" onkeyup=""></textarea>
-			<label for="areaDescription_id">Description</label>
+			<label for="areaDescription<?php echo "_".$index?>_id">Description</label>
 		</span>
 		
 	</div>

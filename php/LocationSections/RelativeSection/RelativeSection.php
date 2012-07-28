@@ -12,12 +12,12 @@
 	<div class='more-content-in'>
 	<a href="#" tabindex="-1"> ------------------------------------------------------ </a>
 		<span>
-			<label class ="nojump" for="relativeDistance_id">Recorded</label>
-			<input id="relativeDistance_id" name="relativeDistance" type="text" class="field text addr" value="" size="27" />
-			<label class ="nojump" for="relativeDistance_id">m.</label>
+			<label class ="nojump" for="relativeDistance<?php echo "_".$index?>_id">Recorded</label>
+			<input id="relativeDistance<?php echo "_".$index?>_id" name="relativeDistance<?php echo "_".$index?>" type="text" class="field text addr" value="" size="27" />
+			<label class ="nojump" for="relativeDistance<?php echo "_".$index?>_id">m.</label>
 		</span>
 		<span class="right">
-				<select id="relativePosition_id" name="relativePosition" class="field select addr" >
+				<select id="relativePosition<?php echo "_".$index?>_id" name="relativePosition<?php echo "_".$index?>" class="field select addr" >
 					<option value="up hill" selected="selected">up hill</option>
 					<option value="along">along</option>
 					<option value="from">from</option>
@@ -32,7 +32,7 @@
 					<option value="SW" >SW</option>
 					<option value="SE" >SE</option>
 				</select>
-				<label for="relativePosition_id">Position</label>
+				<label for="relativePosition<?php echo "_".$index?>_id">Position</label>
 		</span>
 		
 	</div>

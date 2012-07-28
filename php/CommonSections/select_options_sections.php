@@ -97,7 +97,7 @@ function options_section($type) {
 }
 
 function options_section2($type, $index) {
-	$nameId = $type ."_".$index."_id";
+	$nameId = $type."_".$index."_id";
 	$optionsAvailable = sectionData($type);
 	
 	$options = "<li class=\"notranslate\">
@@ -119,6 +119,22 @@ function options_section_in($type) {
 	$options = "<div>
 					<span class = \"left\">
 						<select id=\"$nameId\" name=\"$type\" class=\"field select addr\"> 
+							<option value=\"New\" selected=\"selected\">New $type</option>
+							<option value=\"\" disabled=\"disabled\">--------</option>
+				 			$optionsAvailable
+						</select>
+					</span>
+				</div>";
+	return $options;
+}
+
+function options_section_in2($type, $index) {
+	$nameId = $type."_".$index."_id";
+	$optionsAvailable = sectionData($type);
+
+	$options = "<div>
+					<span class = \"left\">
+						<select id=\"$nameId\" name=\"$type$index\" class=\"field select addr\"> 
 							<option value=\"New\" selected=\"selected\">New $type</option>
 							<option value=\"\" disabled=\"disabled\">--------</option>
 				 			$optionsAvailable
