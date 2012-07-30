@@ -18,7 +18,7 @@ var matriz = [["#researcher_id","#first_name_id", "#last_name_id", "#email_id"],
 $(document).ready(function(){
  	$('select').change(function() {
  		formType = "#" + $(this).attr('id');				// #relativeLocation_1_id
- 		var idMenu = $(formType).val();
+ 		var idMenu = $(formType).val();						// Option selected
  		var type = formType.substr(1,formType.length-4);	// #relativeLocation_1_id -> relativeLocation_1
  		var index = type.substr(type.length-1,type.length-0);	// relativeLocation_1 -> 1
  		var etiquetas = new Array();

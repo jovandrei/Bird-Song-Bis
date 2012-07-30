@@ -1,5 +1,5 @@
 //addEvent(window, 'load', myInitializeFocus);
-
+var myMap; 
 // Add an onClick event to all fields that can show/hide
 function myInitializeFocus(){
 var fields = getElementsByClassName(document, "*", "*");
@@ -9,11 +9,11 @@ var fields = getElementsByClassName(document, "*", "*");
 			fields[i].onclick = function(){
 				//this.className = "test";
 				addClassName(this, pos, true);
-				var selectedSection = $(this).parent().find(".more-content")     
+				var selectedSection = $(this).parent().find(".more-content")
 				var allSections = $(this).parent().parent().parent().find(".more-info").find(".more-content")
 			      
 				var h4 = $(this).parent().find("h4")
-				h4.toggleClass("compressed expanded")
+				//h4.toggleClass("compressed expanded")
 				if (selectedSection.is(":hidden")) {
 					allSections.slideUp("slow")
 					selectedSection.slideDown("slow")  
@@ -23,29 +23,25 @@ var fields = getElementsByClassName(document, "*", "*");
 			};
 		}
 		else if (pos == "H5") {
-			fields[i].onclick = function(){
-				var selectedSection2 = $(this).parent().parent().parent().find(".more-content-in")
-		 		switch ($('input[name=view]:checked').val())
+			fields[i].onclick = function(){		
+				var fieldContainer2 = this.parentNode.parentNode.parentNode.parentNode;
+				var eventsFields = getElementsByClassName(fieldContainer2, "*", "more-content-in");
+
+				switch ($('input[name=view]:checked').val())
 				{
 				 case 'compressed':
-					 selectedSection2.slideUp("slow")
-				 break;
+					 for(var j = 0; j < eventsFields.length; j++) {
+						 $(eventsFields[j]).slideUp("slow");
+					 }
+					 break;
 				 
 				case 'expanded':
-					selectedSection2.slideDown("slow")
-				  
-				 break;
+					for(var j = 0; j < eventsFields.length; j++) {
+						$(eventsFields[j]).slideDown("slow");
+					}
+					break;
 				}
 			};
 		}
 	}
 }
-
-// Temporary measure to load sections
-// The ideal would be to recognize which section (location, analysis, view,...) is selected
-// and load its elements
-$(window).load(function() {
-	AddElement('nextSubArray');
-	myInitializeFocus();
-	
-});
