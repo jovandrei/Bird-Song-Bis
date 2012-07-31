@@ -1,12 +1,12 @@
 <?php 
-function registerRelativeLocationhasMarker($RELATIVE_LOCATION_idRELATIVE_LOCATION) {
+function registerRelativeLocationhasMarker($RELATIVE_LOCATION_idRELATIVE_LOCATION, $relativeLocationIndex) {
 	
-	include('register_Marker.php');
-	registerMarker();
+	include_once('register_Marker.php');
+	registerMarker($relativeLocationIndex);
 	$MARKER_idMARKER = getMarker_IDS(0);
 		
-	$distance = $_POST["relativeDistance"];
-	$position = $_POST["relativePosition"];
+	$distance = $_POST["relativeDistance_$relativeLocationIndex"];
+	$position = $_POST["relativePosition_$relativeLocationIndex"];
 	
 	$tabla="relative_location_has_marker";   //NOMBRE DE LA TABLA A MOSTRAR
 	$sql = "INSERT INTO $tabla (RELATIVE_LOCATION_idRELATIVE_LOCATION, MARKER_idMARKER, distance, position) VALUES (";

@@ -1,13 +1,13 @@
 <?php 
-function registerMarker() {
+function registerMarker($relativeLocationIndex) {
 	
-	include('register_Area.php');
-	registerArea();
+	include_once('register_Area.php');
+	registerArea($relativeLocationIndex);
 	$AREA_idAREA = getArea_IDS(0);
 	$AREA_REGION_idREGION = getRegion_IDS(0);
 	
-	$markerDescription = $_POST["markerDescription"];
-	$markerName = $_POST["markerName"];
+	$markerDescription = $_POST["markerDescription_$relativeLocationIndex"];
+	$markerName = $_POST["markerName_$relativeLocationIndex"];
 	
 	$tabla="marker";   //NOMBRE DE LA TABLA A MOSTRAR
 	

@@ -14,7 +14,10 @@ function registerRelativeLocation() {
 	$RELATIVE_LOCATION_idRELATIVE_LOCATION = $data[0];
 	
 	include('register_RelativeLocationhasMarker.php');
-	registerRelativeLocationhasMarker($RELATIVE_LOCATION_idRELATIVE_LOCATION);
+	$numRelativeLocation =  $_COOKIE["nextRelativeLocation"]; // I read the cookie containing the number of relative locations
+	for ($relativeLocationIndex = 0; $relativeLocationIndex < 2; $relativeLocationIndex++) {
+		registerRelativeLocationhasMarker($RELATIVE_LOCATION_idRELATIVE_LOCATION, $relativeLocationIndex);
+	}
 	
 	return $RELATIVE_LOCATION_idRELATIVE_LOCATION;
 }

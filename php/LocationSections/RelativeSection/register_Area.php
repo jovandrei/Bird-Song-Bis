@@ -1,12 +1,12 @@
 <?php 
-function registerArea() {
+function registerArea($relativeLocationIndex) {
 	
-	include('register_Region.php');
-	registerRegion();
+	include_once('register_Region.php');
+	registerRegion($relativeLocationIndex);
 	$REGION_idREGION = getRegion_IDS(0);
 	
-	$areaName = $_POST["areaName"];
-	$areaDescription = $_POST["areaDescription"];
+	$areaName = $_POST["areaName_$relativeLocationIndex"];
+	$areaDescription = $_POST["areaDescription_$relativeLocationIndex"];
 	
 	$tabla="area";   //NOMBRE DE LA TABLA A MOSTRAR
 	

@@ -12,7 +12,7 @@
 		</div>
 	</div>
 	
-	<INPUT TYPE=BUTTON OnClick="AddElement('nextSubArray');" VALUE="+1 Add one" class="right small boton">
+	<INPUT TYPE=BUTTON OnClick="AddElement('nextRelativeLocation');" VALUE="+1 Add one" class="right small boton">
 	
 	<div id="extraElement">
 			

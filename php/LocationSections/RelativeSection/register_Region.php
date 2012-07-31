@@ -1,9 +1,9 @@
 <?php 
-function registerRegion() {
-	$regionName = $_POST["regionName"];
-	$country = $_POST["country"];
-	$state_or_province = $_POST["state_or_province"];
-	$regionDescription = $_POST["regionDescription"];
+function registerRegion($relativeLocationIndex) {
+	$regionName = $_POST["regionName_$relativeLocationIndex"];
+	$country = $_POST["country_$relativeLocationIndex"];
+	$state_or_province = $_POST["state_or_province_$relativeLocationIndex"];
+	$regionDescription = $_POST["regionDescription_$relativeLocationIndex"];
 	
 	$tabla="region";   //NOMBRE DE LA TABLA A MOSTRAR
 	

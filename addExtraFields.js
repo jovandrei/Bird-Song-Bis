@@ -3,9 +3,9 @@
 function AddElement(nameElement){
 	var file = "addExtraFieldsData.php";
 	
-	myMap[nameElement]++;
+	//myMap[nameElement]++;
 	//document.cookie = nameElement + '=' + myMap[nameElement] + '; expires=Thu, 2 Aug 2021 20:47:11 UTC; path=';
-	createCookie(nameElement, myMap[nameElement], 30); 
+	createCookie(nameElement, myMap[nameElement]++, 30); 
 	$.post(file, {index: myMap[nameElement]},
 		function(data) {
 			resultado = data.substr(0,data.length-1); // hack to eliminate an extra 1 at the end of the "string"
@@ -26,8 +26,8 @@ function AddElement(nameElement){
 //and load its elements
 $(window).load(function() {
 	myMap = {};
-	myMap['nextSubArray'] = 0;
-	AddElement('nextSubArray');
+	myMap['nextRelativeLocation'] = -1;
+	AddElement('nextRelativeLocation');
 	myInitializeFocus();
 	
 });
