@@ -1,9 +1,9 @@
 <?php 
 function registerAbsoluteLocation() {
 	
-	$latitude = $_POST["latitude"];
-	$longitude = $_POST["longitude"];
-	$elevation = $_POST["elevation"];
+	$latitude = $_POST["latitude_0"];
+	$longitude = $_POST["longitude_0"];
+	$elevation = $_POST["elevation_0"];
 	
 	$tabla="absolute_location";   //NOMBRE DE LA TABLA A MOSTRAR
 	

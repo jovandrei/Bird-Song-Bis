@@ -4,7 +4,7 @@
 			
 	<div class='more-content'>
 		<div>
-			<?php include('/php/ResearcherSections/GeneralSection.php'); ?>
+			<?php include('/php/GeneralSections/ResearcherSections/ResearcherSection.php'); ?>
 		</div>
 		<a href="#" tabindex="-1"> ------------------------------------------------------ </a>
 	</div>

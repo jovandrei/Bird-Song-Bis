@@ -5,6 +5,6 @@
 	</head>
 
 	<body id="public">
-		<?php include('/php/LocationSections/_LocationSection.php'); ?>
+		<?php include('/php/LocationSections/_LocationForm.php'); ?>
 	</body>
 </html>

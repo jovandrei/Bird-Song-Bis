@@ -35,5 +35,5 @@
 		
 	</div>
 	
-	<?php include('/php/LocationSections/RelativeSection/MarkerSection.php'); ?>	
+	<?php include('/php/LocationSections/RelativeSection/Marker/MarkerSection.php'); ?>	
 </li>

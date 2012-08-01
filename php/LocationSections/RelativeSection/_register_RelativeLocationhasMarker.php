@@ -1,7 +1,7 @@
 <?php 
 function registerRelativeLocationhasMarker($RELATIVE_LOCATION_idRELATIVE_LOCATION, $relativeLocationIndex) {
 	
-	include_once('register_Marker.php');
+	include_once('Marker/register_Marker.php');
 	registerMarker($relativeLocationIndex);
 	$MARKER_idMARKER = getMarker_IDS(0);
 		

@@ -1,7 +1,7 @@
 <?php 
 function registerArea($relativeLocationIndex) {
 	
-	include_once('register_Region.php');
+	include_once('Region/register_Region.php');
 	registerRegion($relativeLocationIndex);
 	$REGION_idREGION = getRegion_IDS(0);
 	

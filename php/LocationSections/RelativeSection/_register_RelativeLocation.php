@@ -13,9 +13,10 @@ function registerRelativeLocation() {
 	$data = mysql_fetch_array($result);
 	$RELATIVE_LOCATION_idRELATIVE_LOCATION = $data[0];
 	
-	include('register_RelativeLocationhasMarker.php');
+	include('_register_RelativeLocationhasMarker.php');
 	$numRelativeLocation =  $_COOKIE["nextRelativeLocation"]; // I read the cookie containing the number of relative locations
-	for ($relativeLocationIndex = 0; $relativeLocationIndex < 2; $relativeLocationIndex++) {
+	// The index starts at -1, don't know why but it looks like it starts at -2 so +1 does it
+	for ($relativeLocationIndex = 0; $relativeLocationIndex <= $numRelativeLocation+1; $relativeLocationIndex++) { 
 		registerRelativeLocationhasMarker($RELATIVE_LOCATION_idRELATIVE_LOCATION, $relativeLocationIndex);
 	}
 	

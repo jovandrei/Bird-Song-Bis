@@ -1,5 +1,6 @@
 <?php 
 function registerRegion($relativeLocationIndex) {
+	
 	$regionName = $_POST["regionName_$relativeLocationIndex"];
 	$country = $_POST["country_$relativeLocationIndex"];
 	$state_or_province = $_POST["state_or_province_$relativeLocationIndex"];

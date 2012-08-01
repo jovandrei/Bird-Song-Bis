@@ -1,9 +1,9 @@
 <?php 
 function registerResearcher() {
 	
-	$first_name = $_POST["first_name"];
-	$last_name = $_POST["last_name"];
-	$email = $_POST["email"];
+	$first_name = $_POST["first_name_0"];
+	$last_name = $_POST["last_name_0"];
+	$email = $_POST["email_0"];
 	
 	$tabla="researcher";   //NOMBRE DE LA TABLA A MOSTRAR
 	

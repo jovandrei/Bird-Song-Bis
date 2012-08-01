@@ -17,5 +17,5 @@
 		
 	</div>
 	
-	<?php include('/php/LocationSections/RelativeSection/AreaSection.php'); ?>
+	<?php include('/php/LocationSections/RelativeSection/Marker/Area/AreaSection.php'); ?>
 </li>
