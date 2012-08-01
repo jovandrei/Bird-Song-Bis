@@ -7,11 +7,11 @@ var NEW = "New";
 //Esta bandera indica si el cambio en un select viene por el efecto cascada o es un cambio directo
 var cascadeChange = false; 
 
-var matriz = [["#researcher_id","#first_name_id", "#last_name_id", "#email_id"],									// 0
+var matriz = [["#researcher_$_id","#first_name_$_id", "#last_name_$_id", "#email_$_id"],									// 0
               ["#absolute_location_$_id","#longitude_$_id", "#latitude_$_id", "#elevation_$_id"],							// 1
-              ["#relative_location_has_marker_$_id","#relativeDistance_$_id", "#relativePosition_$_id"],						// 2
-              ["#Marker_$_id","#markerName_$_id", "#markerDescription_$_id"],										// 3
-              ["#Area_$_id","#areaName_$_id", "#areaDescription_$_id"],													// 4
+              ["#relative_location_has_marker_$_id","#relativeDistance_$_id", "#relativePosition_$_id"],					// 2
+              ["#Marker_$_id","#markerName_$_id", "#markerDescription_$_id"],												// 3
+              ["#Area_$_id","#areaName_$_id", "#areaDescription_$_id"],														// 4
               ["#Region_$_id","#regionName_$_id", "#country_$_id", "#state_or_province_$_id", "#regionDescription_$_id"]];	// 5
 
 // Cuando se selecciona una opcion de algun menu desplegable, se rellenan los campos de la forma 
@@ -23,31 +23,26 @@ $(document).ready(function(){
  		var index = type.substr(type.length-1,type.length-0);	// relativeLocation_1 -> 1
  		var etiquetas = new Array();
  		var fields = new Array();
- 		//type2 = formType.substr(1,formType.length-6); 		// #relativeLocation_1_id -> relativeLocation 
- 		
- 		switch (type)
- 		{
+ 		type = formType.substr(1,formType.length-6); 		// #relativeLocation_1_id -> relativeLocation 
+ 
+ 		switch (type) {	// I intend to catch all new types id, with number recognition
  		
  			case 'researcher':
- 				etiquetas = matriz[0];	// Researcher
- 				fields = ["first_name" , "last_name", "email"];
- 			break;
- 			 
- 		}
- 		type2 = formType.substr(1,formType.length-6); 
- 		switch (type2) {	// I intend to catch all new types id, with number recognition 
+ 				changeMatrixElementsId (0, 0, index);
+				etiquetas = matriz[0];	// Researcher
+				fields = ["first_name" , "last_name", "email"];
+			break;
+			
  			case 'absolute_location':
  				changeMatrixElementsId (1, 1, index);
 				etiquetas = matriz[1];	// Absolute Location
 				fields = ["longitude", "latitude", "elevation"];
-				type = "absolute_location";
 			break;
 			
  			case 'relative_location_has_marker':
  				changeMatrixElementsId (2, 5, index);
 				etiquetas = matriz[2];	// Relative Location
 				fields = ["distance", "position"];
-				type = "relative_location_has_marker";
 		 		retrieveData(type, idMenu, matriz[3][0], "MARKER_idMARKER");	// Marker_id
 			break;
 			
@@ -56,7 +51,6 @@ $(document).ready(function(){
  				etiquetas = matriz[3];	// Marker
  				fields = ["name", "description"];
  				cascadeChangeFunction(matriz[3][0]); // Marker_id
- 				type = "Marker";
  		 		retrieveData(type, idMenu, matriz[4][0], "AREA_idAREA");		// Area_id
  			break;
  			
@@ -65,7 +59,6 @@ $(document).ready(function(){
  				etiquetas = matriz[4];	// Changes de id on the fields in Area, Region
  				fields = ["name", "description"];
  				cascadeChangeFunction(matriz[4][0]); // Area_id
- 				type = "Area";
  		 		retrieveData(type, idMenu, matriz[5][0], "REGION_idREGION");	// Region_id
  			break;
  			
@@ -74,7 +67,6 @@ $(document).ready(function(){
  				etiquetas = matriz[5];	// Region
  				fields = ["name", "country", "state_or_province", "description"];
  				cascadeChangeFunction(matriz[5][0]); // Region_id
- 				type = "Region";
  			break;
  		}
  		

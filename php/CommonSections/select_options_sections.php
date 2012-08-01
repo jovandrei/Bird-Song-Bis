@@ -101,22 +101,6 @@ function options_section2($type, $index) {
 	return $options;
 }
 
-function options_section_in($type) {
-	$nameId = $type . "_id";
-	$optionsAvailable = sectionData($type);
-
-	$options = "<div>
-					<span class = \"left\">
-						<select id=\"$nameId\" name=\"$type\" class=\"field select addr\"> 
-							<option value=\"New\" selected=\"selected\">New $type</option>
-							<option value=\"\" disabled=\"disabled\">--------</option>
-				 			$optionsAvailable
-						</select>
-					</span>
-				</div>";
-	return $options;
-}
-
 function options_section_in2($type, $index) {
 	$nameId = $type."_".$index."_id";
 	$name = $type."_".$index;

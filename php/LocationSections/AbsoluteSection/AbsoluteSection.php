@@ -1,5 +1,5 @@
 <li class="complex notranslate">
-	<label class="desc" for="latitude_id">
+	<label class="desc" for="latitude_<?php echo $index?>_id">
 		Absolute Information
 	</label>
 

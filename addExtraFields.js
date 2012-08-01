@@ -8,12 +8,24 @@ $(window).load(function() {
 	myMap['nextRelativeLocation'] = -1;
 	AddElement('nextRelativeLocation', 
 			'#extraRelativeLocation', 
-			"/php/LocationSections/RelativeSection/RelativeTestSection.php");
+			"/php/LocationSections/RelativeSection/_AddRelativeSection.php");
 	
 	myMap['nextAbsoluteLocation'] = -1;
 	AddElement('nextAbsoluteLocation', 
 			'#extraAbsoluteLocation', 
 			"/php/LocationSections/AbsoluteSection/_AddAbsoluteSection.php");
+	myInitializeFocus();
+
+	myMap['nextEnvironment'] = -1;
+	AddElement('nextEnvironment', 
+			'#extraEnvironment', 
+			"/php/LocationSections/EnvironmentSection/_AddEnvironmentSection.php");
+	myInitializeFocus();
+
+	myMap['nextResearcher'] = -1;
+	AddElement('nextResearcher', 
+			'#extraResearcher', 
+			"/php/ResearcherSections/_AddResearcherSection.php");
 	myInitializeFocus();
 	
 });
@@ -21,8 +33,6 @@ $(window).load(function() {
 function AddElement(nameElement, containerName, sectionPath){
 	var file = "addExtraFieldsData.php";
 	
-	//myMap[nameElement]++;
-	//document.cookie = nameElement + '=' + myMap[nameElement] + '; expires=Thu, 2 Aug 2021 20:47:11 UTC; path=';
 	createCookie(nameElement, myMap[nameElement]++, 30); 
 	$.post(file, {index: myMap[nameElement], path: sectionPath},
 		function(data) {

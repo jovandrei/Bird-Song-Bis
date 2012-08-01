@@ -1,4 +1,3 @@
-<?php require_once('/php/CommonSections/headerSection.php'); ?>
 <div id="container">
 	<form class="wufoo" autocomplete="on" enctype="multipart/form-data" method="post" novalidate
 		action="php/ResearcherSections/register_ResearcherData.php">
