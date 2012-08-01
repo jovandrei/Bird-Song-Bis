@@ -1,22 +1,13 @@
 <div >
 	<?php echo options_section("Location"); ?>
-	<div class='more-info'>
-		<h4 class='compressed'>Absolute Location</h4>
-		<?php echo options_section("absolute_location"); ?>
-				
-		<div class='more-content'>
-			<div>
-				<?php include('/php/LocationSections/AbsoluteSection/AbsoluteSection.php'); ?>
-			</div>
-			<a href="#" tabindex="-1"> ------------------------------------------------------ </a>
-		</div>
-	</div>
+
+	<div id="extraAbsoluteLocation"></div>
 	
-	<INPUT TYPE=BUTTON OnClick="AddElement('nextRelativeLocation');" VALUE="+1 Add one" class="right small boton">
-	
-	<div id="extraElement">
-			
-	</div>
+	<INPUT TYPE=BUTTON OnClick="AddElement('nextRelativeLocation', 
+		'#extraRelativeLocation', 
+		'/php/LocationSections/RelativeSection/RelativeTestSection.php');" 
+		VALUE="+1 Add one" class="right small boton">
+	<div id="extraRelativeLocation"></div>
 	
 	<div class='more-info' id="Environment_location">
 		<h4 class='compressed'>Environment Location</h4>

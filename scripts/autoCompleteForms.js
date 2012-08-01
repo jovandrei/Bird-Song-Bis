@@ -8,22 +8,22 @@ var NEW = "New";
 var cascadeChange = false; 
 
 var matriz = [["#researcher_id","#first_name_id", "#last_name_id", "#email_id"],									// 0
-              ["#absolute_location_id","#longitude_id", "#latitude_id", "#elevation_id"],							// 1
-              ["#relative_location_0_id","#relativeDistance_0_id", "#relativePosition_0_id"],						// 2
-              ["#Marker_0_id","#markerName_0_id", "#markerDescription_0_id"],												// 3
-              ["#Area_0_id","#areaName_0_id", "#areaDescription_0_id"],													// 4
-              ["#Region_0_id","#regionName_0_id", "#country_0_id", "#state_or_province_0_id", "#regionDescription_0_id"]];	// 5
+              ["#absolute_location_$_id","#longitude_$_id", "#latitude_$_id", "#elevation_$_id"],							// 1
+              ["#relative_location_has_marker_$_id","#relativeDistance_$_id", "#relativePosition_$_id"],						// 2
+              ["#Marker_$_id","#markerName_$_id", "#markerDescription_$_id"],										// 3
+              ["#Area_$_id","#areaName_$_id", "#areaDescription_$_id"],													// 4
+              ["#Region_$_id","#regionName_$_id", "#country_$_id", "#state_or_province_$_id", "#regionDescription_$_id"]];	// 5
 
 // Cuando se selecciona una opcion de algun menu desplegable, se rellenan los campos de la forma 
 $(document).ready(function(){
  	$('select').change(function() {
- 		formType = "#" + $(this).attr('id');				// #relativeLocation_1_id
- 		var idMenu = $(formType).val();						// Option selected
- 		var type = formType.substr(1,formType.length-4);	// #relativeLocation_1_id -> relativeLocation_1
+ 		formType = "#" + $(this).attr('id');					// #relativeLocation_1_id
+ 		var idMenu = $(formType).val();							// ID of Option selected
+ 		var type = formType.substr(1,formType.length-4);		// #relativeLocation_1_id -> relativeLocation_1
  		var index = type.substr(type.length-1,type.length-0);	// relativeLocation_1 -> 1
  		var etiquetas = new Array();
  		var fields = new Array();
- 		type2 = formType.substr(1,formType.length-6); 		// #relativeLocation_1_id -> relativeLocation 
+ 		//type2 = formType.substr(1,formType.length-6); 		// #relativeLocation_1_id -> relativeLocation 
  		
  		switch (type)
  		{
@@ -32,21 +32,19 @@ $(document).ready(function(){
  				etiquetas = matriz[0];	// Researcher
  				fields = ["first_name" , "last_name", "email"];
  			break;
- 		 
- 			case 'absolute_location':
- 				etiquetas = matriz[1];	// Absolute Location
- 				fields = ["longitude", "latitude", "elevation"];
- 			break;
  			 
  		}
  		type2 = formType.substr(1,formType.length-6); 
  		switch (type2) {	// I intend to catch all new types id, with number recognition 
- 			case 'relative_location':
- 				for (var i = 2; i < 6; i++) { // Changes de id on the fields in Relative, Marker, Area, Region
-					for (var j = 0; j < matriz[i].length; j++) {
-						matriz[i][j] = matriz[i][j].substr(0, matriz[i][j].length-4) + index + "_id"; // changes the last id number to the desired index
-					}
- 				}
+ 			case 'absolute_location':
+ 				changeMatrixElementsId (1, 1, index);
+				etiquetas = matriz[1];	// Absolute Location
+				fields = ["longitude", "latitude", "elevation"];
+				type = "absolute_location";
+			break;
+			
+ 			case 'relative_location_has_marker':
+ 				changeMatrixElementsId (2, 5, index);
 				etiquetas = matriz[2];	// Relative Location
 				fields = ["distance", "position"];
 				type = "relative_location_has_marker";
@@ -54,11 +52,7 @@ $(document).ready(function(){
 			break;
 			
  			case 'Marker':
- 				for (var i = 3; i < 6; i++) { // Changes de id on the fields in Marker, Area, Region
-	 				for (var j = 0; j < matriz[i].length; j++) {
-						matriz[i][j] = matriz[i][j].substr(0, matriz[i][j].length-4) + index + "_id"; // changes the last id number to the desired index
-					}
- 				}
+ 				changeMatrixElementsId (3, 5, index);
  				etiquetas = matriz[3];	// Marker
  				fields = ["name", "description"];
  				cascadeChangeFunction(matriz[3][0]); // Marker_id
@@ -67,11 +61,7 @@ $(document).ready(function(){
  			break;
  			
  			case 'Area':
- 				for (var i = 4; i < 6; i++) { // Changes de id on the fields in Area
-	 				for (var j = 0; j < matriz[i].length; j++) {
-						matriz[i][j] = matriz[i][j].substr(0, matriz[i][j].length-4) + index + "_id"; // changes the last id number to the desired index
-					}
- 				}
+ 				changeMatrixElementsId (4, 5, index);
  				etiquetas = matriz[4];	// Changes de id on the fields in Area, Region
  				fields = ["name", "description"];
  				cascadeChangeFunction(matriz[4][0]); // Area_id
@@ -80,11 +70,7 @@ $(document).ready(function(){
  			break;
  			
  			case 'Region':
- 				for (var i = 5; i < 6; i++) { // Changes de id on the fields in Region
-	 				for (var j = 0; j < matriz[i].length; j++) {
-						matriz[i][j] = matriz[i][j].substr(0, matriz[i][j].length-4) + index + "_id"; // changes the last id number to the desired index
-					}
- 				}
+ 				changeMatrixElementsId (5, 5, index);
  				etiquetas = matriz[5];	// Region
  				fields = ["name", "country", "state_or_province", "description"];
  				cascadeChangeFunction(matriz[5][0]); // Region_id
@@ -100,6 +86,15 @@ $(document).ready(function(){
  	$('textarea').change(function() { setNew(this); });
  	$('select').change(function() { setNew(this); });
 });
+
+// Changes the Id of the subelements when there are many instances
+function changeMatrixElementsId (fromRow, toRow, newIndex) {
+	for (var row = fromRow; row <= toRow; row++) { // Changes de id on the fields in Relative, Marker, Area, Region
+		for (var elementIndex = 0; elementIndex < matriz[row].length; elementIndex++) {
+			matriz[row][elementIndex] = matriz[row][elementIndex].substr(0, matriz[row][elementIndex].length-4) + newIndex + "_id"; // changes the last id number to the desired index
+		}
+	}
+}
 
 // Cuando un campo cambia su valor, cambia a new su select asociado asi como los select padres
 function setNew(thisElement) {
@@ -149,7 +144,7 @@ function loadData(dataType, idMenu, etiquetas, fields) {
 	}
 }
 
-// obtiene los id de los hijos, cambia la opcion de sus select y carga sus campos asociados
+// Obtains child's ids, change their select options and the fields associated with them.
 function retrieveData(dataType, idMenu, fieldTable, field) {
 	$.post(file, {table: dataType, id: idMenu, fieldNumber: 0, fieldName: field},
 		function(output){

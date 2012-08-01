@@ -3,7 +3,8 @@
 	
 	/* RECOVER POST VARIABLES */
 	$index = $_POST['index'];
-	$field = include('/php/LocationSections/RelativeSection/RelativeTestSection.php');
+	$path = $_POST['path'];
+	$field = include($path);
 	echo $field;
 
 ?>

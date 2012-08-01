@@ -1,4 +1,4 @@
-	<select id="country<?php echo "_".$index?>_id" name="country<?php echo "_".$index?>" class="field select addr">
+	<select id="country_<?php echo $index?>_id" name="country<?php echo "_".$index?>" class="field select addr">
 				<option value="" selected="selected"></option>
 				<option value="United States" >United States</option>
 				<option value="United Kingdom" >United Kingdom</option>

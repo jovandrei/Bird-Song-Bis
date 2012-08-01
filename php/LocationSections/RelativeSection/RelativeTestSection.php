@@ -1,6 +1,6 @@
 <div class='more-info'>
 	<h4 class='compressed'>Relative Location</h4>
-	<?php echo options_section2("relative_location", $index); ?>
+	<?php echo options_section2("relative_location_has_marker", $index); ?>
 
 	<div class='more-content'>
 		<div>
