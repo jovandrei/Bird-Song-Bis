@@ -1,7 +1,7 @@
 <?php 
 function registerMarker($relativeLocationIndex) {
 	
-	include_once('Area/register_Area.php');
+	include_once('Area/_register_Area.php');
 	registerArea($relativeLocationIndex);
 	$AREA_idAREA = getArea_IDS(0);
 	$AREA_REGION_idREGION = getRegion_IDS(0);
