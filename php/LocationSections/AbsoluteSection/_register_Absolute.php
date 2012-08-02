@@ -1,7 +1,7 @@
 <?php 
 function registerAbsoluteLocation() {
 	
-	$latitude = $_POST["latitude_0"];
+	$latitude = $_POST["latitude_0"]; // There is only 1, so there is no need to have a counter
 	$longitude = $_POST["longitude_0"];
 	$elevation = $_POST["elevation_0"];
 	

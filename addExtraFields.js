@@ -23,6 +23,12 @@ $(window).load(function() {
 			"/php/LocationSections/EnvironmentSection/_AddEnvironmentSection.php");
 	myInitializeFocus();
 	
+	myMap['nextFile'] = -1;
+	AddElement('nextFile', 
+			'#extraFile', 
+			"/php/GeneralSections/FileSection/_AddFileSection.php");
+	myInitializeFocus();
+	
 });
 
 function AddElement(nameElement, containerName, sectionPath){
