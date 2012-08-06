@@ -1,0 +1,77 @@
+html{
+	background:#eee
+}
+
+body
+{
+	font-size:14px;
+	margin:0;
+	padding:0;
+}
+
+header h1
+{
+	font-size:3em;
+}
+
+#container {
+	text-align:left;
+	background:#fff;
+	border:1px solid #ccc;
+	-webkit-box-shadow:rgba(0,0,0,0.2) 0px 0px 5px;
+	-moz-box-shadow:rgba(0,0,0,0.2) 0px 0px 5px;
+	-o-box-shadow:rgba(0,0,0,0.2) 0px 0px 5px;
+	box-shadow:rgba(0,0,0,0.2) 0px 0px 5px;
+	margin:0 auto 10px auto;
+	width:640px;
+
+}
+
+input.medium,select.medium{
+	width:50%
+}
+
+label.desc {
+	font-size:95%;
+	font-weight:bold;
+	color:#222;
+	line-height:150%;
+	margin:0;
+	padding:0 0 3px 0;
+	border:none;
+	display:block;
+	white-space:normal;
+	width:100%;
+}
+
+button.btTxt {
+	clear:both;
+	margin-left:450px;
+	width:125px;
+	height:31px;
+	background:#666666 url(../images/backgr.jpg) no-repeat;
+	text-align:center;
+	line-height:31px;
+	color:#FFFFFF;
+	font-size:11px;
+	font-weight:bold;
+}
+
+input.text,input.search,input.file,textarea.textarea,select.select{
+	font-family:"Lucida Grande", Tahoma, Arial, sans-serif;
+	font-size:100%;
+	color:#333;
+	margin:0;
+	padding:2px 0
+}
+input.text,input.search,textarea.textarea{
+	border-top:1px solid #7c7c7c;
+	border-left:1px solid #c3c3c3;
+	border-right:1px solid #c3c3c3;
+	border-bottom:1px solid #ddd;
+	background:#fff url(../images/fieldbg.gif) repeat-x top
+}
+
+.center,form li span.center input.text,form li span.center label,form li.name span label,form li.date input.text,form li.date span label,form li.phone input.text,form li.phone span label,form li.time input.text,form li.time span label{
+	text-align:center
+}

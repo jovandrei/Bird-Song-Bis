@@ -8,7 +8,10 @@ var NEW = "New";
 var cascadeChange = false; 
 
 var matriz = [["#researcher_$_id","#first_name_$_id", "#last_name_$_id", "#email_$_id"],									// 0
-              ["#absolute_location_$_id","#longitude_$_id", "#latitude_$_id", "#elevation_$_id"],							// 1
+              ["#absolute_location_$_id",
+               	"#longitude_degrees_$_id", "#longitude_minutes_$_id","#longitude_seconds_$_id","#longitude_orientation_$_id",
+               	"#latitude_degrees_$_id", "#latitude_minutes_$_id", "#latitude_seconds_$_id","#latitude_orientation_$_id",
+               	"#elevation_$_id"],							// 1
               ["#relative_location_has_marker_$_id","#relativeDistance_$_id", "#relativePosition_$_id"],					// 2
               ["#Marker_$_id","#markerName_$_id", "#markerDescription_$_id"],												// 3
               ["#Area_$_id","#areaName_$_id", "#areaDescription_$_id"],														// 4
@@ -36,7 +39,9 @@ $(document).ready(function(){
  			case 'absolute_location':
  				changeMatrixElementsId (1, 1, index);
 				etiquetas = matriz[1];	// Absolute Location
-				fields = ["longitude", "latitude", "elevation"];
+				fields = ["longitude_degrees", "longitude_minutes", "longitude_seconds", "longitude_orientation",
+				          "latitude_degrees", "latitude_minutes", "latitude_seconds", "latitude_orientation", 
+				          "elevation"];
 			break;
 			
  			case 'relative_location_has_marker':

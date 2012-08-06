@@ -6,7 +6,9 @@ $link = Conectarse();
 $selectOptionElements = array(
 	"researcher"					=>	array ("first_name"," ",	"last_name"),
 	"Location"						=>	array (" "),
-	"absolute_location"				=>	array ("latitude",	", ",	"longitude",	", ",		"elevation"),
+	"absolute_location"				=>	array ("latitude_degrees","°",	"latitude_minutes","\"",	"latitude_seconds","'"," ",		"latitude_orientation",		", ",
+												"longitude_degrees","°","longitude_minutes","\"",	"longitude_seconds","'"," ",	"longitude_orientation",	", ",
+												"elevation", "m "),
 	"relative_location_has_marker"	=>	array ("distance",	" m ",	"position",
 												"$",		"MARKER_idMARKER",		"MARKER",	"name",		"$"),
 	"Marker"						=>	array ("name"),
@@ -50,14 +52,15 @@ function sectionData($table) {
     					$child_id_column_name = $val; 
     					$checkChildIndex++; 
     				} else if ($checkChildIndex == 1) { 
-    					$child_table_name = $val; 
+    					$child_table_name = $val;
     					$checkChildIndex++; 
     				} else if ($checkChildIndex >= 2) { 
     					$child_column_name = $val; 
     					$checkChildIndex++;
     					$options .= " ".selectChildInfo ($row, $child_id_column_name, $child_table_name, $child_column_name);
     				}
-    			} else if ($val == ". " || $val == ", " || $val == " " || $val == " m ") { // If the array has a special character
+    			} else if ($val == ". " || $val == ", " || $val == " " || $val == " m "
+    						|| $val == "°" || $val == "m " || $val == "'"|| $val == "\"") { // If the array has a special character
     				$options .= $val;
     			} else { // if not a special character, search it as a column name
     				$options .= $row[$val];

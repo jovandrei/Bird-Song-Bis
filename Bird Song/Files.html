@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>
+	Files
+	</title>
+
+	<!-- CSS -->
+	<link href="css/structure.css" rel="stylesheet">
+	<link href="css/form.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- JavaScript -->
+	<script src="scripts/wufoo.js"></script>
+
+	<!--[if lt IE 10]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link href='http://fonts.googleapis.com/css?family=Viga|Titan+One|Passion+One|Cabin+Condensed:700' rel='stylesheet' type='text/css'>
+	
+
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+	<script src="http://cdn.jquerytools.org/1.2.6/form/jquery.tools.min.js"></script>
+
+	<script type="text/javascript" src="scripts/theduxer.min.js"></script>
+
+</head>
+
+<body id="public">
+	
+<div id="container" class="ltr">
+
+
+<form id="form20" name="form20" class="wufoo  page" autocomplete="on" enctype="multipart/form-data" method="post" novalidate
+action="">
+
+<header id="header" class="info">
+<h2>Files</h2>
+</header>
+
+</form>
+
+<section id="player" data-autoplay="1" data-loop = "1" data-random="0">
+		<section id="controls">
+		
+			<section id = "songTitle">
+				<span>Titulo de la Cancion</span>
+			</section>
+
+			<section id = "playertrols">
+				<div id="plauseStop">
+					<div id="plause"></div>
+					<div id="stop"></div>
+				</div>
+
+				<div id="progressBar">
+					<div id="timeLoaded"></div>
+					<div id="timePlayed"></div>
+				</div>
+			</section>
+
+			<section id = "volumeTime">
+				<input type="range" min="0" max="1" step="0.1" value="0.5"/>
+
+				<div id="timeStatus">
+					<time id="played">00:00</time>
+						<span>/</span>
+					<time id="totalTime">00:00</time>
+				</div>
+			</section>
+		</section>
+
+		<section id = "playlist">
+
+			<section id="tracks">
+
+				<article class="track" data-source="tracks/001">
+
+					<span>Track 01 - Estracto de algun canto de ave</span>
+
+				</article>
+
+				<article class="track" id="fFtg45" data-source="tracks/002">
+
+					<span class="track-name">Track 02 - Canto del ave cantora</span>
+
+				</article>
+
+				<article class="track" id="SDf436" data-source="tracks/003">
+
+					<span class="track-name">Track 03 - Ave grabada el otro dia</span>
+
+				</article>
+
+				<article class="track" data-source="tracks/Track04">
+					<span>Track 04 - Un archivo que no tiene nada</span>
+				</article>
+
+
+			</section>
+
+			<section id="playlistControl">
+				<span>&#x25B2;</span>
+			</section>
+
+		</section>
+	</section>	
+
+	<div id="currentTime">
+		<time>00:00</time>
+	</div>
+	
+</div><!--container-->
+
+</body>
+</html>

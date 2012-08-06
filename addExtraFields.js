@@ -6,27 +6,10 @@
 $(window).load(function() {
 	myMap = {};
 	
-	myMap['nextAbsoluteLocation'] = -1;
-	AddElement('nextAbsoluteLocation', 
-			'#extraAbsoluteLocation', 
-			"/php/LocationSections/AbsoluteSection/_AddAbsoluteSection.php");
-	myInitializeFocus();
-	
-	myMap['nextRelativeLocation'] = -1;
-	AddElement('nextRelativeLocation', 
-			'#extraRelativeLocation', 
-			"/php/LocationSections/RelativeSection/_AddRelativeSection.php");
-
-	myMap['nextEnvironment'] = -1;
-	AddElement('nextEnvironment', 
-			'#extraEnvironment', 
-			"/php/LocationSections/EnvironmentSection/_AddEnvironmentSection.php");
-	myInitializeFocus();
+	myMap['nextRelativeLocation'] = 0;
 	
 	myMap['nextFile'] = -1;
-	AddElement('nextFile', 
-			'#extraFile', 
-			"/php/GeneralSections/FileSection/_AddFileSection.php");
+	
 	myInitializeFocus();
 	
 });
