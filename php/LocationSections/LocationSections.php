@@ -12,21 +12,16 @@
 		<h5><INPUT TYPE=BUTTON OnClick="AddElement('nextRelativeLocation', '#extraRelativeLocation', 
 					'/php/LocationSections/RelativeSection/_AddRelativeSection.php');" 
 					VALUE="+1 Add one Marker" class="right small boton"></h5>
-					
-					
-		<h4 class='compressed'>Relative Location</h4>
 		
-	
+		<h4 class='compressed'>Relative Location</h4>
 		<div class='more-content'>
 			<div>
-		
 				<div id="extraRelativeLocation">
 					<?php
 						$index = 0; 
 						include('/php/LocationSections/RelativeSection/_AddRelativeSection.php'); 
 					?>
 				</div>
-			
 			</div>
 			<a href="#" tabindex="-1"> ------------------------------------------------------ </a>
 		</div>

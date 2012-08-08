@@ -1,6 +1,10 @@
 <?php 
 function registerAbsoluteLocation() {
 	
+	$absolute_select_option = $_POST["absolute_location_0"];
+	if ($absolute_select_option != "New")
+		return $absolute_select_option;
+		
 	$latitude_degrees = $_POST["latitude_degrees_0"]; // There is only 1, so there is no need to have a counter
 	$latitude_minutes = $_POST["latitude_minutes_0"];
 	$latitude_seconds = $_POST["latitude_seconds_0"];
@@ -40,6 +44,7 @@ function registerAbsoluteLocation() {
 	$data = mysql_fetch_array($result);
 	$ABSOLUTE_LOCATION_idABSOLUTE_LOCATION = $data[0];
 	return $ABSOLUTE_LOCATION_idABSOLUTE_LOCATION;
+	
 }
 
 ?> 
