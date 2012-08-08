@@ -45,7 +45,7 @@ $(document).ready(function(){
 			break;
 			
  			case 'relative_location_has_marker':
- 				changeMatrixElementsId (2, 5, index);
+ 				changeMatrixElementsId (2, 5, index);	// change all his and its child's field index
 				etiquetas = matriz[2];	// Relative Location
 				fields = ["distance", "position"];
 		 		retrieveData(type, idMenu, matriz[3][0], "MARKER_idMARKER");	// Marker_id
@@ -78,7 +78,7 @@ $(document).ready(function(){
  		loadData(type, idMenu, etiquetas, fields);
 	});
  	
- 	// Saber si algun valor a cambiado
+ 	// Saber si algun valor en algun campo a cambiado
  	$('input').change(function() { setNew(this); });
  	$('textarea').change(function() { setNew(this); });
  	$('select').change(function() { setNew(this); });
@@ -96,15 +96,25 @@ function changeMatrixElementsId (fromRow, toRow, newIndex) {
 // Cuando un campo cambia su valor, cambia a new su select asociado asi como los select padres
 function setNew(thisElement) {
 	var fieldId = "#" + $(thisElement).attr('id');
-	for (var numEtiqueta = 0; numEtiqueta < matriz.length; numEtiqueta++) {
-		for (var numCampo = 1; numCampo < matriz[numEtiqueta].length; numCampo++) {
-			var str = matriz[numEtiqueta][numCampo];
-			if (str == fieldId) {
-				$(matriz[numEtiqueta][0]).val(NEW);
-				cascadeChangeFunction(matriz[numEtiqueta][0]);
+	for (var numEtiqueta = 0; numEtiqueta < matriz.length; numEtiqueta++) { // Check all rows of matrix
+		//var flag = false;
+		//for (var index = 0; index < 10; index++) {
+			//changeMatrixElementsId (2, 5, index);
+		
+			/****/
+	 		var type = fieldId.substr(1,fieldId.length-4);		// #relativeLocation_1_id -> relativeLocation_1
+	 		var index = type.substr(type.length-1,type.length-0);
+	 		changeMatrixElementsId (0, matriz.length-1, index);
+	 		/*****/
+			for (var numCampo = 1; numCampo < matriz[numEtiqueta].length; numCampo++) { // Check all fields of the row
+				var str = matriz[numEtiqueta][numCampo];
+				if (str == fieldId) {// if the field of the matrix and fieldId obtained are the same, change its values
+					$(matriz[numEtiqueta][0]).val(NEW);
+					cascadeChangeFunction(matriz[numEtiqueta][0]);
+				}
 			}
-		}
-	}	
+		//}
+	}
 }
 
 // Cambio a New los select padres cuando un hijo tiene un cambio en algun campo
@@ -128,7 +138,7 @@ function cascadeChangeFunction(type) {
 // cambia los valores de los campos asociados a un select cuando se selecciona una opcion
 function loadData(dataType, idMenu, etiquetas, fields) {
 	for (var numCampo = 0; numCampo < etiquetas.length-1; numCampo++) {
-		$.post(file, {table: dataType, id: idMenu, fieldNumber: numCampo, fieldName: fields[numCampo]},
+		$.post(file, {table: dataType, id: idMenu, fieldNumber: numCampo, fieldName: fields[numCampo], addZero: false},
 			function(output){
 				if (output[0] == "0")     // if first value is 0
 					numDato = parseInt(output[1]) + 1;  // is a single digit number
@@ -136,6 +146,7 @@ function loadData(dataType, idMenu, etiquetas, fields) {
 					numDato = parseInt(output.substr(0,2)) + 1;
 	
 				str = output.substr(2,output.length);  // the first two digits are the ID digits
+				
 				$(etiquetas[numDato]).val(str)();
 			});
 	}
@@ -143,7 +154,7 @@ function loadData(dataType, idMenu, etiquetas, fields) {
 
 // Obtains child's ids, change their select options and the fields associated with them.
 function retrieveData(dataType, idMenu, fieldTable, field) {
-	$.post(file, {table: dataType, id: idMenu, fieldNumber: 0, fieldName: field},
+	$.post(file, {table: dataType, id: idMenu, fieldNumber: 0, fieldName: field, addZero: true},	// I ask for a field value in the database
 		function(output){
 			str = output.substr(2,output.length);
 			if (idMenu == NEW) str = NEW;

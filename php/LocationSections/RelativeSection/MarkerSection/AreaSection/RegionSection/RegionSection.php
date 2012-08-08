@@ -1,6 +1,6 @@
 <li class="complex notranslate">
 
-	<label class="desc2" for="Region_<?php echo $index?>_id">_id">IN REGION</label>
+	<label class="desc2" for="Region_<?php echo $index?>_id">IN REGION</label>
 	<?php echo options_section_in2("Region", $index); ?>
 	
 	<div class='more-content-in'>

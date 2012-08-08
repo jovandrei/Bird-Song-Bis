@@ -7,11 +7,11 @@
 	</div>	
 </li>
 <li class="complex notranslate">		
-	<div class='more-content-in'>
-	<a href="#" tabindex="-1"> ------------------------------------------------------ </a>
+	<div>
+		<a href="#" tabindex="-1"> ------------------------------------------------------ </a>
 		<span>
 			<label class ="nojump" for="relativeDistance<?php echo "_".$index?>_id">Recorded</label>
-			<input id="relativeDistance<?php echo "_".$index?>_id" name="relativeDistance<?php echo "_".$index?>" type="text" class="field text addr" value="" size="27" />
+			<input id="relativeDistance<?php echo "_".$index?>_id" name="relativeDistance<?php echo "_".$index?>" type="text" class="field text addr" value="" size="20" />
 			<label class ="nojump" for="relativeDistance<?php echo "_".$index?>_id">m.</label>
 		</span>
 		<span class="right">

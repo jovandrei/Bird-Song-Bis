@@ -176,17 +176,17 @@ label.nojump {
 	margin:0;
 	padding-top:3px;
 	clear:both;
-	font-size:120%;
+	font-size:85%;
 	line-height:160%;
 	color:#444;
 	display:inline
 }
 
-label.nojumpSmall {
+label.nojumpBig {
 	margin:0;
 	padding-top:3px;
 	clear:both;
-	font-size:85%;
+	font-size:120%;
 	line-height:160%;
 	color:#444;
 	display:inline

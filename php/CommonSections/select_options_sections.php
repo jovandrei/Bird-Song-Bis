@@ -29,6 +29,9 @@ function sectionData($table) {
 	
 	$options = ""; 
 	$count = 0;
+	/*****************************/
+	$sameKeyCount = 0;
+	$lastPrimaryKeyValue = 0;
 	/*******/
 	$checkChild = false;
 	$checkChildIndex = 0;
@@ -38,8 +41,19 @@ function sectionData($table) {
 	/*******/
 	
 	if ($result) { // If the mysql query returned results
-		while ($row=mysql_fetch_array($result)) { 
-		    $options .= "<option value=\"".$row[$primaryKeyName]."\" >".++$count.". ";
+		while ($row=mysql_fetch_array($result)) { // I extract row by row
+			/*****************************/
+			$nextValue = $row[$primaryKeyName];
+			if ($lastPrimaryKeyValue != $nextValue) {
+				$lastPrimaryKeyValue = $nextValue;
+				$sameKeyCount = 0;
+			} else {
+				$sameKeyCount++;
+			}
+			/*****************************/
+			
+			$nextValue .= $sameKeyCount;	// I add a counter at the end to differentiate rows with the same primary key
+		    $options .= "<option value=\"".$nextValue."\" >".++$count.". "; // the value is the row primary key
 		    			
     		for ($i=0; $i<count($selectOptionElements[$table]); $i++) {
     			$val = $selectOptionElements[$table][$i]; // for easier syntax

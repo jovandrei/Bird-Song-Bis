@@ -7,6 +7,7 @@ $(window).load(function() {
 	myMap = {};
 	
 	myMap['nextRelativeLocation'] = 0;
+	document.cookie = 'nextRelativeLocation' + '=' + myMap['nextRelativeLocation'] + '; expires=Thu, 2 Aug 2021 20:47:11 UTC; path=';
 	
 	myMap['nextFile'] = -1;
 	
@@ -17,7 +18,7 @@ $(window).load(function() {
 function AddElement(nameElement, containerName, sectionPath){
 	var file = "addExtraFieldsData.php";
 	 
-	document.cookie = nameElement + '=' + myMap[nameElement]++ + '; expires=Thu, 2 Aug 2021 20:47:11 UTC; path=';
+	document.cookie = nameElement + '=' + ++myMap[nameElement] + '; expires=Thu, 2 Aug 2021 20:47:11 UTC; path=';
 	$.post(file, {index: myMap[nameElement], path: sectionPath},
 		function(data) {
 			resultado = data.substr(0,data.length-1); // hack to eliminate an extra 1 at the end of the "string"
