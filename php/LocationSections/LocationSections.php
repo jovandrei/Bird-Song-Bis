@@ -1,12 +1,14 @@
 <div >
 	<?php echo options_section2("Location", 0); ?>
-
-	<div id="extraAbsoluteLocation">
-		<?php
-			$index = 0; 
-			include('/php/LocationSections/AbsoluteSection/_AddAbsoluteSection.php'); 
-		?>
-	</div>
+	<li class="complex notranslate">
+		<div>
+			<span>
+				<textarea id="locationDescription_0_id"  name="locationDescription_0" 
+					class="field select addr" spellcheck="true" rows="1" cols="70" onkeyup=""></textarea>
+				<label for="locationDescription_0_id">Location Description</label>
+			</span>		
+		</div>
+	</li>
 	
 	<div class='more-info'>
 		<h5><INPUT TYPE=BUTTON OnClick="AddElement('nextRelativeLocation', '#extraRelativeLocation', 
@@ -27,6 +29,13 @@
 		</div>
 	</div>
 	
+	<div id="extraAbsoluteLocation">
+		<?php
+			$index = 0; 
+			include('/php/LocationSections/AbsoluteSection/_AddAbsoluteSection.php'); 
+		?>
+	</div>
+	
 	
 	<div id="extraEnvironment">
 		<?php
@@ -42,4 +51,5 @@
 		?>
 	</div>
 
+	
 </div>

@@ -13,7 +13,10 @@ $selectOptionElements = array(
 												"$",		"MARKER_idMARKER",		"MARKER",	"name",		"$"),
 	"Marker"						=>	array ("name"),
 	"Area"							=>	array ("name"),
-	"Region"						=>	array ("name")
+	"Region"						=>	array ("name"),
+	"environment"					=>	array ("comments/features"),
+	"weather"						=>	array ("description"),
+	"vegetation"					=>	array ("vegetation_type")
   );
 
 // Metodo que jala de la BD todos los registros de la tabla $type

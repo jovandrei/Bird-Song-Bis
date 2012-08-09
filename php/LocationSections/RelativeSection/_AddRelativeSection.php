@@ -1,5 +1,5 @@
 <div class='more-info'>
-	<h4 class='compressed'>Relative Location Marker <?php echo $index+1?></h4>
+	<h5 class='compressed'>Relative Location Marker <?php echo $index+1?></h5>
 	<?php echo options_section2("relative_location_has_marker", $index); ?>
 
 	<div class='more-contento'>

@@ -9,13 +9,30 @@ var cascadeChange = false;
 
 var matriz = [["#researcher_$_id","#first_name_$_id", "#last_name_$_id", "#email_$_id"],									// 0
               ["#absolute_location_$_id",
-               	"#longitude_degrees_$_id", "#longitude_minutes_$_id","#longitude_seconds_$_id","#longitude_orientation_$_id",
-               	"#latitude_degrees_$_id", "#latitude_minutes_$_id", "#latitude_seconds_$_id","#latitude_orientation_$_id",
-               	"#elevation_$_id"],							// 1
-              ["#relative_location_has_marker_$_id","#relativeDistance_$_id", "#relativePosition_$_id"],					// 2
-              ["#Marker_$_id","#markerName_$_id", "#markerDescription_$_id"],												// 3
-              ["#Area_$_id","#areaName_$_id", "#areaDescription_$_id"],														// 4
-              ["#Region_$_id","#regionName_$_id", "#country_$_id", "#state_or_province_$_id", "#regionDescription_$_id"]];	// 5
+               		"#longitude_degrees_$_id", "#longitude_minutes_$_id","#longitude_seconds_$_id","#longitude_orientation_$_id",
+               		"#latitude_degrees_$_id", "#latitude_minutes_$_id", "#latitude_seconds_$_id","#latitude_orientation_$_id",
+               		"#elevation_$_id"],																						// 1
+               	["#relative_location_has_marker_$_id","#relativeDistance_$_id", "#relativePosition_$_id"],					// 2
+               	["#Marker_$_id","#markerName_$_id", "#markerDescription_$_id"],												// 3
+               	["#Area_$_id","#areaName_$_id", "#areaDescription_$_id"],													// 4
+               	["#Region_$_id","#regionName_$_id", "#country_$_id", "#state_or_province_$_id", "#regionDescription_$_id"],	// 5
+				["#environment_$_id", "#environmentComments_$_id"],
+				["#weather_$_id", "#weatherDescription_$_id"],
+				["#vegetation_$_id", "#vegetationType_$_id"]
+				];
+
+var matrizFields = [["first_name" , "last_name", "email"], 
+                    ["longitude_degrees", "longitude_minutes", "longitude_seconds", "longitude_orientation",
+			          "latitude_degrees", "latitude_minutes", "latitude_seconds", "latitude_orientation", 
+			          "elevation"],
+					["distance", "position"],
+					["name", "description"],
+					["name", "description"],
+					["name", "country", "state_or_province", "description"],
+					["comments/features"],
+					["description"],
+					["vegetation_type"]
+					];
 
 // Cuando se selecciona una opcion de algun menu desplegable, se rellenan los campos de la forma 
 $(document).ready(function(){
@@ -27,52 +44,71 @@ $(document).ready(function(){
  		var etiquetas = new Array();
  		var fields = new Array();
  		type = formType.substr(1,formType.length-6); 		// #relativeLocation_1_id -> relativeLocation 
- 
+ 		
+ 		changeMatrixElementsId (0, matriz.length-1, index);
  		switch (type) {	// I intend to catch all new types id, with number recognition
  		
  			case 'researcher':
- 				changeMatrixElementsId (0, 0, index);
+ 				//changeMatrixElementsId (0, matriz.length, index);
 				etiquetas = matriz[0];	// Researcher
-				fields = ["first_name" , "last_name", "email"];
+				fields = matrizFields[0];
 			break;
 			
  			case 'absolute_location':
- 				changeMatrixElementsId (1, 1, index);
+ 				//changeMatrixElementsId (1, 1, index);
 				etiquetas = matriz[1];	// Absolute Location
-				fields = ["longitude_degrees", "longitude_minutes", "longitude_seconds", "longitude_orientation",
-				          "latitude_degrees", "latitude_minutes", "latitude_seconds", "latitude_orientation", 
-				          "elevation"];
+				fields = matrizFields[1];
 			break;
 			
  			case 'relative_location_has_marker':
- 				changeMatrixElementsId (2, 5, index);	// change all his and its child's field index
+ 				//changeMatrixElementsId (0, 5, index);	// change all his and its child's field index
 				etiquetas = matriz[2];	// Relative Location
-				fields = ["distance", "position"];
+				fields = matrizFields[2];
 		 		retrieveData(type, idMenu, matriz[3][0], "MARKER_idMARKER");	// Marker_id
 			break;
 			
  			case 'Marker':
- 				changeMatrixElementsId (3, 5, index);
+ 				//changeMatrixElementsId (3, 5, index);
  				etiquetas = matriz[3];	// Marker
- 				fields = ["name", "description"];
+ 				fields = matrizFields[3];
  				cascadeChangeFunction(matriz[3][0]); // Marker_id
  		 		retrieveData(type, idMenu, matriz[4][0], "AREA_idAREA");		// Area_id
  			break;
  			
  			case 'Area':
- 				changeMatrixElementsId (4, 5, index);
+ 				//changeMatrixElementsId (4, 5, index);
  				etiquetas = matriz[4];	// Changes de id on the fields in Area, Region
- 				fields = ["name", "description"];
+ 				fields = matrizFields[4];
  				cascadeChangeFunction(matriz[4][0]); // Area_id
  		 		retrieveData(type, idMenu, matriz[5][0], "REGION_idREGION");	// Region_id
  			break;
  			
  			case 'Region':
- 				changeMatrixElementsId (5, 5, index);
+ 				//changeMatrixElementsId (5, 5, index);
  				etiquetas = matriz[5];	// Region
- 				fields = ["name", "country", "state_or_province", "description"];
+ 				fields = matrizFields[5];
  				cascadeChangeFunction(matriz[5][0]); // Region_id
  			break;
+ 			
+ 			case 'environment':
+ 				etiquetas = matriz[6];	
+ 				fields = matrizFields[6];
+ 		 		retrieveData(type, idMenu, matriz[7][0], "WEATHER_idWEATHER");	 		
+ 		 		retrieveData(type, idMenu, matriz[8][0], "VEGETATION_idVEGETATION");
+ 			break;
+ 			
+ 			case 'weather':
+ 				etiquetas = matriz[7];
+ 				fields = matrizFields[7];
+ 				cascadeChangeFunction(matriz[7][0]);
+ 			break;
+ 			
+ 			case 'vegetation':
+ 				etiquetas = matriz[8];
+ 				fields = matrizFields[8];
+ 				cascadeChangeFunction(matriz[8][0]);
+ 			break;
+ 				
  		}
  		
  		loadData(type, idMenu, etiquetas, fields);
@@ -131,6 +167,13 @@ function cascadeChangeFunction(type) {
 				$(matriz[2][0]).val(NEW); // relative_location
 			break;
 			
+			case matriz[8][0]:	// vegetation_id
+				$(matriz[6][0]).val(NEW); // environment_id
+			break;
+			
+			case matriz[7][0]:	// weather_id
+				$(matriz[6][0]).val(NEW); // environment_id
+			break;		
 		}
 	}
 }
@@ -148,6 +191,7 @@ function loadData(dataType, idMenu, etiquetas, fields) {
 				str = output.substr(2,output.length);  // the first two digits are the ID digits
 				
 				$(etiquetas[numDato]).val(str)();
+				changeMatrixElementsId (0, 0, 0)
 			});
 	}
 }

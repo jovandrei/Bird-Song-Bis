@@ -1,6 +1,6 @@
 <li class="complex notranslate">
 
-	<label class="desc2" for="Marker_id">HAS MARKER</label>
+	<label class="desc2" for="Marker_<?php echo $index?>_id">HAS MARKER</label>
 	<?php echo options_section_in2("Marker", $index); ?>
 	
 	<div class='more-content-in'>

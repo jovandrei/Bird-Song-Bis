@@ -5,13 +5,13 @@
 
 	<div>
 		<span>
-			<input id="latitude_degrees_<?php echo $index?>_id" name="latitude_degrees_<?php echo $index?>" type="text" class="field text addr" value="" size="3" />
+			<input id="latitude_degrees_<?php echo $index?>_id" name="latitude_degrees_<?php echo $index?>" type="text" class="field text addr" value="" size="5" />
 			<label  class ="nojumpBig" for="latitude_degrees_<?php echo $index?>_id">°</label>
 			
-			<input id="latitude_minutes_<?php echo $index?>_id" name="latitude_minutes_<?php echo $index?>" type="text" class="field text addr" value="" size="3" />
+			<input id="latitude_minutes_<?php echo $index?>_id" name="latitude_minutes_<?php echo $index?>" type="text" class="field text addr" value="" size="5" />
 			<label  class ="nojumpBig" for="latitude_minutes_<?php echo $index?>_id">'</label>
 			
-			<input id="latitude_seconds_<?php echo $index?>_id" name="latitude_seconds_<?php echo $index?>" type="text" class="field text addr" value="" size="3" />
+			<input id="latitude_seconds_<?php echo $index?>_id" name="latitude_seconds_<?php echo $index?>" type="text" class="field text addr" value="" size="5" />
 			<label  class ="nojumpBig" for="latitude_seconds_<?php echo $index?>_id">"</label>
 			
 			<select id="latitude_orientation_<?php echo $index?>_id" name="latitude_orientation_<?php echo $index?>" class="field select addr">
@@ -25,13 +25,13 @@
 	
 	<div>
 		<span>
-			<input id="longitude_degrees_<?php echo $index?>_id" name="longitude_degrees_<?php echo $index?>" type="text" class="field text addr" value="" size="3" />
+			<input id="longitude_degrees_<?php echo $index?>_id" name="longitude_degrees_<?php echo $index?>" type="text" class="field text addr" value="" size="5" />
 			<label  class ="nojumpBig" for="longitude_degrees_<?php echo $index?>_id">°</label>
 			
-			<input id="longitude_minutes_<?php echo $index?>_id" name="longitude_minutes_<?php echo $index?>" type="text" class="field text addr" value="" size="3" />
+			<input id="longitude_minutes_<?php echo $index?>_id" name="longitude_minutes_<?php echo $index?>" type="text" class="field text addr" value="" size="5" />
 			<label  class ="nojumpBig" for="longitude_minutes_<?php echo $index?>_id">'</label>
 			
-			<input id="longitude_seconds_<?php echo $index?>_id" name="longitude_seconds_<?php echo $index?>" type="text" class="field text addr" value="" size="3" />
+			<input id="longitude_seconds_<?php echo $index?>_id" name="longitude_seconds_<?php echo $index?>" type="text" class="field text addr" value="" size="5" />
 			<label  class ="nojumpBig" for="longitude_seconds_<?php echo $index?>_id">"</label>
 			
 			<select id="longitude_orientation_<?php echo $index?>_id" name="longitude_orientation_<?php echo $index?>" class="field select addr">
