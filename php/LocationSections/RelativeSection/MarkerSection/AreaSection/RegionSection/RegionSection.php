@@ -10,14 +10,14 @@
 		</span>
 	</div>
 	<div class='more-content-in'>
-		<span class="right state">
-			<input id="state_or_province_<?php echo $index?>_id" name="state_or_province_<?php echo $index?>" type="text" class="field text addr" value="" />
-			<label for="state_or_province_<?php echo $index?>_id">State / Province / Region</label>
-		</span>
-
 		<span class="left">
 			<?php require_once('/php/CommonSections/contriesSelectionSection.php'); ?>
 			<label for="country_<?php echo $index?>_id">Country</label>
+		</span>
+		
+		<span class="right state">
+			<input id="state_or_province_<?php echo $index?>_id" name="state_or_province_<?php echo $index?>" type="text" class="field text addr" value="" />
+			<label for="state_or_province_<?php echo $index?>_id">State / Province / Region</label>
 		</span>
 
 		<span class="full text">

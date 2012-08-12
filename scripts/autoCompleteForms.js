@@ -18,7 +18,9 @@ var matriz = [["#researcher_$_id","#first_name_$_id", "#last_name_$_id", "#email
                	["#Region_$_id","#regionName_$_id", "#country_$_id", "#state_or_province_$_id", "#regionDescription_$_id"],	// 5
 				["#environment_$_id", "#environmentComments_$_id"],
 				["#weather_$_id", "#weatherDescription_$_id"],
-				["#vegetation_$_id", "#vegetationType_$_id"]
+				["#vegetation_$_id", "#vegetationType_$_id"],
+				["#vegetation_has_vegetation_species_$_id", "#average_density_$_id", "#projected_cover_$_id", "#average_height_$_id"],
+				["#vegetation_species_$_id", "#common_name_$_id", "#scientific_name_$_id"]
 				];
 
 var matrizFields = [["first_name" , "last_name", "email"], 
@@ -29,9 +31,11 @@ var matrizFields = [["first_name" , "last_name", "email"],
 					["name", "description"],
 					["name", "description"],
 					["name", "country", "state_or_province", "description"],
-					["comments/features"],
+					["comments_features"],
 					["description"],
-					["vegetation_type"]
+					["vegetation_type"],
+					["average_density", "projected_cover", "average_height"],
+					["scientific_name", "common_name"]
 					];
 
 // Cuando se selecciona una opcion de algun menu desplegable, se rellenan los campos de la forma 
@@ -107,7 +111,18 @@ $(document).ready(function(){
  				etiquetas = matriz[8];
  				fields = matrizFields[8];
  				cascadeChangeFunction(matriz[8][0]);
+ 				retrieveData(type, idMenu, matriz[9][0], "idVEGETATION");
  			break;
+ 			
+ 			case 'vegetation_has_vegetation_species':
+ 				etiquetas = matriz[9];
+ 				fields = matrizFields[9];
+ 				retrieveData(type, idMenu, matriz[10][0], "VEGETATION_SPECIES_idVEGETATION_SPECIES");
+ 			break;
+ 			
+ 			case 'vegetation_species':
+ 				etiquetas = matriz[10];
+				fields = matrizFields[10];
  				
  		}
  		

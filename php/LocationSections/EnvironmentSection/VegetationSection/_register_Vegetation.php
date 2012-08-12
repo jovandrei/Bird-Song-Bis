@@ -20,6 +20,16 @@ function registerVegetation() {
 	$result = mysql_query($sql);
 	$data = mysql_fetch_array($result);
 	$VEGETATION_idVEGETATION = $data[0];
+	
+	include('_register_Vegetation_has_Vegetation_Species.php');
+	$numVegetationSpecies =  $_COOKIE["nextVegetationSpecies"]; // I read the cookie containing the number of relative locations
+	
+	for ($vegetationSpeciesIndex = 0; $vegetationSpeciesIndex <= $numVegetationSpecies; $vegetationSpeciesIndex++) {
+		$vegetation_has_vegetation_species_select_option = $_POST["vegetation_has_vegetation_species_$vegetationSpeciesIndex"];
+		if ($vegetation_has_vegetation_species_select_option == "New")
+			register_vegetation_has_vegetation_species($VEGETATION_idVEGETATION, $vegetationSpeciesIndex);
+	}
+	
 	return $VEGETATION_idVEGETATION;
 }
 

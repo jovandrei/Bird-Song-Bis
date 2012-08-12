@@ -9,7 +9,13 @@ $(window).load(function() {
 	myMap['nextRelativeLocation'] = 0;
 	document.cookie = 'nextRelativeLocation' + '=' + myMap['nextRelativeLocation'] + '; expires=Thu, 2 Aug 2021 20:47:11 UTC; path=';
 	
-	myMap['nextFile'] = -1;
+	myMap['nextFile'] = 0;
+	
+	myMap['nextVegetationSpecies'] = -1;
+	AddElement('nextVegetationSpecies', '#extraVegetationSpecies', 
+	'/php/LocationSections/EnvironmentSection/VegetationSection/_AddVegetationSpeciesSection.php');
+	
+	
 	
 	myInitializeFocus();
 	

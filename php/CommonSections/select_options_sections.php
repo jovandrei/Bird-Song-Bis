@@ -14,9 +14,11 @@ $selectOptionElements = array(
 	"Marker"						=>	array ("name"),
 	"Area"							=>	array ("name"),
 	"Region"						=>	array ("name"),
-	"environment"					=>	array ("comments/features"),
+	"environment"					=>	array ("comments_features"),
 	"weather"						=>	array ("description"),
-	"vegetation"					=>	array ("vegetation_type")
+	"vegetation"					=>	array ("vegetation_type"),
+	"vegetation_has_vegetation_species"	=>	array ("average_density",	", "	, "projected_cover",	", ",	 "average_height"),
+	"vegetation_species"			=>	array ("scientific_name", 	", "	,"common_name")
   );
 
 // Metodo que jala de la BD todos los registros de la tabla $type

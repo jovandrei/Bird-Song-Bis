@@ -11,13 +11,13 @@ function registerEnvironment() {
 	include_once('VegetationSection/_register_Vegetation.php');		// Vegetation
 	$VEGETATION_idVEGETATION = registerVegetation();
 		
-	$comments = $_POST["environmentComments_0"]; 			// Get the only comment in environment
+	$comments_features = $_POST["environmentComments_0"]; 			// Get the only comment in environment
 	
 	$tabla="environment";   //NOMBRE DE LA TABLA A MOSTRAR
 	
-	$sql = "INSERT INTO $tabla (idENVIRONMENT, comments/features, WEATHER_idWEATHER, VEGETATION_idVEGETATION) VALUES (";
+	$sql = "INSERT INTO $tabla (idENVIRONMENT, comments_features, WEATHER_idWEATHER, VEGETATION_idVEGETATION) VALUES (";
 	$sql .= "NULL";
-	$sql .= ", '$comments'";
+	$sql .= ", '$comments_features'";
 	$sql .= ", '$WEATHER_idWEATHER'";
 	$sql .= ", '$VEGETATION_idVEGETATION'";
 	$sql .= ");";
