@@ -1,11 +1,4 @@
-<li class="complex notranslate">
-	<div class='radioButton'>
-		<h5>
-				<input type="radio" class="edicion_eventos" name="view" value="compressed" checked="checked"/> Compressed
-				<input type="radio" class="edicion_eventos" name="view" value="expanded"/> Expanded
-		</h5>
-	</div>	
-</li>
+
 <li class="complex notranslate">		
 	<div>
 		<a href="#" tabindex="-1"> ------------------------------------------------------ </a>

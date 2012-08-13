@@ -6,8 +6,11 @@
 $(window).load(function() {
 	myMap = {};
 	
-	myMap['nextRelativeLocation'] = 0;
-	document.cookie = 'nextRelativeLocation' + '=' + myMap['nextRelativeLocation'] + '; expires=Thu, 2 Aug 2021 20:47:11 UTC; path=';
+	myMap['nextRelativeLocation'] = -1;
+	AddElement('nextRelativeLocation', '#extraRelativeLocation', 
+	'/php/LocationSections/RelativeSection/_AddRelativeSection.php');
+	 
+	
 	
 	myMap['nextFile'] = 0;
 	
@@ -28,7 +31,8 @@ function AddElement(nameElement, containerName, sectionPath){
 	$.post(file, {index: myMap[nameElement], path: sectionPath},
 		function(data) {
 			resultado = data.substr(0,data.length-1); // hack to eliminate an extra 1 at the end of the "string"
-			$(containerName).append(resultado).trigger('create');
+			
+			$(containerName).append(resultado).children().eq(5*(myMap[nameElement])-1+5).fadeOut("fast").fadeIn(1000);
 			
 			// Recognize newly added Elements in the highlight_array
 			initializeFocus();

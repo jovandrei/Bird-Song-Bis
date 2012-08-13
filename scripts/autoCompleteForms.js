@@ -7,22 +7,24 @@ var NEW = "New";
 //Esta bandera indica si el cambio en un select viene por el efecto cascada o es un cambio directo
 var cascadeChange = false; 
 
-var matriz = [["#researcher_$_id","#first_name_$_id", "#last_name_$_id", "#email_$_id"],									// 0
+var matriz = [["#researcher_$_id","#first_name_$_id", "#last_name_$_id", "#email_$_id"],										
               ["#absolute_location_$_id",
                		"#longitude_degrees_$_id", "#longitude_minutes_$_id","#longitude_seconds_$_id","#longitude_orientation_$_id",
                		"#latitude_degrees_$_id", "#latitude_minutes_$_id", "#latitude_seconds_$_id","#latitude_orientation_$_id",
-               		"#elevation_$_id"],																						// 1
-               	["#relative_location_has_marker_$_id","#relativeDistance_$_id", "#relativePosition_$_id"],					// 2
-               	["#Marker_$_id","#markerName_$_id", "#markerDescription_$_id"],												// 3
-               	["#Area_$_id","#areaName_$_id", "#areaDescription_$_id"],													// 4
-               	["#Region_$_id","#regionName_$_id", "#country_$_id", "#state_or_province_$_id", "#regionDescription_$_id"],	// 5
+               		"#elevation_$_id"],																							
+               	["#relative_location_has_marker_$_id","#relativeDistance_$_id", "#relativePosition_$_id"],						
+               	["#Marker_$_id","#markerName_$_id", "#markerDescription_$_id"],													
+               	["#Area_$_id","#areaName_$_id", "#areaDescription_$_id"],														
+               	["#Region_$_id","#regionName_$_id", "#country_$_id", "#state_or_province_$_id", "#regionDescription_$_id"],		
 				["#environment_$_id", "#environmentComments_$_id"],
 				["#weather_$_id", "#weatherDescription_$_id"],
 				["#vegetation_$_id", "#vegetationType_$_id"],
 				["#vegetation_has_vegetation_species_$_id", "#average_density_$_id", "#projected_cover_$_id", "#average_height_$_id"],
 				["#vegetation_species_$_id", "#common_name_$_id", "#scientific_name_$_id"]
+
 				];
 
+// fields of each table
 var matrizFields = [["first_name" , "last_name", "email"], 
                     ["longitude_degrees", "longitude_minutes", "longitude_seconds", "longitude_orientation",
 			          "latitude_degrees", "latitude_minutes", "latitude_seconds", "latitude_orientation", 
@@ -36,8 +38,23 @@ var matrizFields = [["first_name" , "last_name", "email"],
 					["vegetation_type"],
 					["average_density", "projected_cover", "average_height"],
 					["scientific_name", "common_name"]
+
 					];
 
+var matrizTableParentsChilds = [//table							parent_id,	parent_child_id_name
+                                ["researcher", 						-1,		 	""],
+                                ["absolute_location", 				-1, 		""],
+                                ["relative_location_has_marker", 	-1,			""],
+                                ["Marker", 							 2, 	 	"MARKER_idMARKER"],
+                                ["Area", 							 3,		 	"AREA_idAREA"],
+                                ["Region",							 4,			"REGION_idREGION"],
+                                ["environment",						-1,			""],
+                                ["weather",							 6,			"WEATHER_idWEATHER"],
+                                ["vegetation",						 6,			"VEGETATION_idVEGETATION"],
+                                ["vegetation_has_vegetation_species",8,			"idVEGETATION"],
+                                ["vegetation_species",				 9,			"VEGETATION_SPECIES_idVEGETATION_SPECIES"]
+                                
+                                ];
 // Cuando se selecciona una opcion de algun menu desplegable, se rellenan los campos de la forma 
 $(document).ready(function(){
  	$('select').change(function() {
@@ -48,88 +65,31 @@ $(document).ready(function(){
  		var etiquetas = new Array();
  		var fields = new Array();
  		type = formType.substr(1,formType.length-6); 		// #relativeLocation_1_id -> relativeLocation 
+ 		var typeNum;
  		
  		changeMatrixElementsId (0, matriz.length-1, index);
- 		switch (type) {	// I intend to catch all new types id, with number recognition
  		
- 			case 'researcher':
- 				//changeMatrixElementsId (0, matriz.length, index);
-				etiquetas = matriz[0];	// Researcher
-				fields = matrizFields[0];
-			break;
-			
- 			case 'absolute_location':
- 				//changeMatrixElementsId (1, 1, index);
-				etiquetas = matriz[1];	// Absolute Location
-				fields = matrizFields[1];
-			break;
-			
- 			case 'relative_location_has_marker':
- 				//changeMatrixElementsId (0, 5, index);	// change all his and its child's field index
-				etiquetas = matriz[2];	// Relative Location
-				fields = matrizFields[2];
-		 		retrieveData(type, idMenu, matriz[3][0], "MARKER_idMARKER");	// Marker_id
-			break;
-			
- 			case 'Marker':
- 				//changeMatrixElementsId (3, 5, index);
- 				etiquetas = matriz[3];	// Marker
- 				fields = matrizFields[3];
- 				cascadeChangeFunction(matriz[3][0]); // Marker_id
- 		 		retrieveData(type, idMenu, matriz[4][0], "AREA_idAREA");		// Area_id
- 			break;
- 			
- 			case 'Area':
- 				//changeMatrixElementsId (4, 5, index);
- 				etiquetas = matriz[4];	// Changes de id on the fields in Area, Region
- 				fields = matrizFields[4];
- 				cascadeChangeFunction(matriz[4][0]); // Area_id
- 		 		retrieveData(type, idMenu, matriz[5][0], "REGION_idREGION");	// Region_id
- 			break;
- 			
- 			case 'Region':
- 				//changeMatrixElementsId (5, 5, index);
- 				etiquetas = matriz[5];	// Region
- 				fields = matrizFields[5];
- 				cascadeChangeFunction(matriz[5][0]); // Region_id
- 			break;
- 			
- 			case 'environment':
- 				etiquetas = matriz[6];	
- 				fields = matrizFields[6];
- 		 		retrieveData(type, idMenu, matriz[7][0], "WEATHER_idWEATHER");	 		
- 		 		retrieveData(type, idMenu, matriz[8][0], "VEGETATION_idVEGETATION");
- 			break;
- 			
- 			case 'weather':
- 				etiquetas = matriz[7];
- 				fields = matrizFields[7];
- 				cascadeChangeFunction(matriz[7][0]);
- 			break;
- 			
- 			case 'vegetation':
- 				etiquetas = matriz[8];
- 				fields = matrizFields[8];
- 				cascadeChangeFunction(matriz[8][0]);
- 				retrieveData(type, idMenu, matriz[9][0], "idVEGETATION");
- 			break;
- 			
- 			case 'vegetation_has_vegetation_species':
- 				etiquetas = matriz[9];
- 				fields = matrizFields[9];
- 				retrieveData(type, idMenu, matriz[10][0], "VEGETATION_SPECIES_idVEGETATION_SPECIES");
- 			break;
- 			
- 			case 'vegetation_species':
- 				etiquetas = matriz[10];
-				fields = matrizFields[10];
- 				
+ 		// Get the index of the type of select
+ 		for (var i = 0; i < matrizTableParentsChilds.length; i++) {
+ 			if (matrizTableParentsChilds[i][0] == type) {
+ 				typeNum = i;
+ 				break;
+ 			}
  		}
  		
+ 		// with the index search all childs related to the select
+ 		for (var i = 0; i < matrizTableParentsChilds.length; i++) {
+ 			if (matrizTableParentsChilds[i][1] == typeNum) {
+ 				retrieveData(type, idMenu, matriz[i][0], matrizTableParentsChilds[i][2]);
+ 			}
+ 		}
+ 		
+ 		etiquetas = matriz[typeNum];
+		fields = matrizFields[typeNum];
  		loadData(type, idMenu, etiquetas, fields);
 	});
  	
- 	// Saber si algun valor en algun campo a cambiado
+ 	// if some field has changed, set the select to new
  	$('input').change(function() { setNew(this); });
  	$('textarea').change(function() { setNew(this); });
  	$('select').change(function() { setNew(this); });
@@ -144,13 +104,34 @@ function changeMatrixElementsId (fromRow, toRow, newIndex) {
 	}
 }
 
+//Cambio a New los select padres cuando un hijo tiene un cambio en algun campo
+function cascadeChangeFunction(type) {
+	if (!cascadeChange) { // Only activated if the change comes from a select_in
+		var typeNum;
+		
+		// get the index of the type of table
+		for (var i = 0; i < matriz.length; i++) {
+ 			if (matriz[i][0] == type) {
+ 				typeNum = i;
+ 				break;
+ 			}
+ 		}
+	
+		// set all parents select to new
+		while (true) {
+			typeNum = matrizTableParentsChilds[typeNum][1];
+			if (typeNum == -1)
+				break;
+			$(matriz[typeNum][0]).val(NEW);
+			
+		}
+	}
+}
+
 // Cuando un campo cambia su valor, cambia a new su select asociado asi como los select padres
 function setNew(thisElement) {
 	var fieldId = "#" + $(thisElement).attr('id');
 	for (var numEtiqueta = 0; numEtiqueta < matriz.length; numEtiqueta++) { // Check all rows of matrix
-		//var flag = false;
-		//for (var index = 0; index < 10; index++) {
-			//changeMatrixElementsId (2, 5, index);
 		
 			/****/
 	 		var type = fieldId.substr(1,fieldId.length-4);		// #relativeLocation_1_id -> relativeLocation_1
@@ -165,31 +146,6 @@ function setNew(thisElement) {
 				}
 			}
 		//}
-	}
-}
-
-// Cambio a New los select padres cuando un hijo tiene un cambio en algun campo
-function cascadeChangeFunction(type) {
-	if (!cascadeChange) { // Only activated if the change comes from a select_in
-		switch (type) {
-			case matriz[5][0]:	// Region_id
-				$(matriz[4][0]).val(NEW); // Area_id
-
-			case matriz[4][0]:	// Area_id
-				$(matriz[3][0]).val(NEW); // Marker_id
-			
-			case matriz[3][0]:	// Marker_id
-				$(matriz[2][0]).val(NEW); // relative_location
-			break;
-			
-			case matriz[8][0]:	// vegetation_id
-				$(matriz[6][0]).val(NEW); // environment_id
-			break;
-			
-			case matriz[7][0]:	// weather_id
-				$(matriz[6][0]).val(NEW); // environment_id
-			break;		
-		}
 	}
 }
 

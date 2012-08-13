@@ -1,22 +1,26 @@
 <div >
-	<?php echo options_section2("Location", 0); ?>
 		
 	<div class='more-info'>		
 		<h4 class='compressed'>Relative Location</h4>
 		
 		<div class='more-content'>
-		<div>
-		<h5><INPUT TYPE=BUTTON OnClick="AddElement('nextRelativeLocation', '#extraRelativeLocation', 
-					'/php/LocationSections/RelativeSection/_AddRelativeSection.php');" 
-					VALUE="+1 Add one Marker" class="left small boton"></h5>
-					<a href="#" tabindex="-1"> ------------------------------------------------------ </a>
-		</div>
+			<div>
+			<h5><INPUT TYPE=BUTTON OnClick="AddElement('nextRelativeLocation', '#extraRelativeLocation', 
+						'/php/LocationSections/RelativeSection/_AddRelativeSection.php');" 
+						VALUE="+1 Add one Marker" class="left small boton"></h5>
+						<a href="#" tabindex="-1"> ------------------------------------------------------ </a>
+			</div>
+			<div class='radioButton'>
+				<h5>
+						
+						<input type="radio" class="edicion_eventos" name="view" value="compressed" checked="checked"/> Compressed
+						<input type="radio" class="edicion_eventos" name="view" value="expanded"/> Expanded
+						
+				</h5>
+			</div>	
 			<div>
 				<div id="extraRelativeLocation">
-					<?php
-						$index = 0; 
-						include('/php/LocationSections/RelativeSection/_AddRelativeSection.php'); 
-					?>
+					
 				</div>
 			</div>
 			<a href="#" tabindex="-1"> ------------------------------------------------------ </a>
@@ -38,10 +42,10 @@
 		?>
 	</div>
 		
-	<div id="extraFile">
+	<div id="location_has_file">
 		<?php
 			$index = 0; 
-			include('/php/GeneralSections/FileSection/_AddFileSection.php'); 
+			include('/php/LocationSections/location_has_file_SECTION/_ADD_location_has_file.php'); 
 		?>
 	</div>
 
