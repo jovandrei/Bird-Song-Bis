@@ -7,12 +7,10 @@ $(window).load(function() {
 	myMap = {};
 	
 	myMap['nextRelativeLocation'] = -1;
-	AddElement('nextRelativeLocation', '#extraRelativeLocation', 
-	'/php/LocationSections/RelativeSection/_AddRelativeSection.php');
-	 
+	document.cookie = 'nextRelativeLocation' + '=' + ++myMap['nextRelativeLocation'] + '; expires=Thu, 2 Aug 2021 20:47:11 UTC; path=';
 	
-	
-	myMap['nextFile'] = 0;
+	myMap['nextFile'] = -1;
+	document.cookie = 'nextFile' + '=' + ++myMap['nextFile'] + '; expires=Thu, 2 Aug 2021 20:47:11 UTC; path=';
 	
 	myMap['nextVegetationSpecies'] = -1;
 	AddElement('nextVegetationSpecies', '#extraVegetationSpecies', 
@@ -32,7 +30,7 @@ function AddElement(nameElement, containerName, sectionPath){
 		function(data) {
 			resultado = data.substr(0,data.length-1); // hack to eliminate an extra 1 at the end of the "string"
 			
-			$(containerName).append(resultado).children().eq(5*(myMap[nameElement])-1+5).fadeOut("fast").fadeIn(1000);
+			$(containerName).append(resultado).children().eq(5*(myMap[nameElement])).fadeOut(250).fadeIn(500);
 			
 			// Recognize newly added Elements in the highlight_array
 			initializeFocus();

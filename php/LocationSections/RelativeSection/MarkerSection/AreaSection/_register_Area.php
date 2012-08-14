@@ -1,9 +1,12 @@
 <?php 
 function registerArea($relativeLocationIndex) {
 	
+	$AREA_idAREA = $_POST["Area_0"];
+	if ($AREA_idAREA != "New")
+		return substr($AREA_idAREA, 0, -1);
+		
 	include_once('RegionSection/_register_Region.php');
-	registerRegion($relativeLocationIndex);
-	$REGION_idREGION = getRegion_IDS(0);
+	$REGION_idREGION = registerRegion($relativeLocationIndex);
 	
 	$areaName = $_POST["areaName_$relativeLocationIndex"];
 	$areaDescription = $_POST["areaDescription_$relativeLocationIndex"];
@@ -18,16 +21,12 @@ function registerArea($relativeLocationIndex) {
 	$sql .= ");";
 	
 	mysql_query($sql);
-}
-
-function getArea_IDS($pos) {
-	$tabla="area";
+	
 	$sql = "SELECT Max(idAREA) from $tabla";
 	$result = mysql_query($sql);
 	$data = mysql_fetch_array($result);
-	$id = $data[$pos];
-		
-	return $id;
+	$AREA_idAREA = $data[0];
+	return $AREA_idAREA;
 }
 
 ?> 

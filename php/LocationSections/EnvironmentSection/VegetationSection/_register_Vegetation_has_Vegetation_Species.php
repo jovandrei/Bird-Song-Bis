@@ -3,7 +3,7 @@ function register_vegetation_has_vegetation_species($VEGETATION_idVEGETATION, $v
 	
 	$vegetation_has_vegetation_species_select_option = $_POST["vegetation_has_vegetation_species_$vegetationSpeciesIndex"];	// get the select option value
 	if ($vegetation_has_vegetation_species_select_option != "New")					// if its not "New", don't add anything
-		return $vegetation_has_vegetation_species_select_option;
+		return substr($vegetation_has_vegetation_species_select_option, 0, -1);
 	
 	include_once('Vegetation_Species/_register_vegetation_species.php');
 	$VEGETATION_SPECIES_idVEGETATION_SPECIES = registerVegetationSpecies($vegetationSpeciesIndex);

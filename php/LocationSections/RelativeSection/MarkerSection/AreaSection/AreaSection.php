@@ -11,7 +11,7 @@
 		
 		<span>
 			<textarea id="areaDescription<?php echo "_".$index?>_id"  name="areaDescription<?php echo "_".$index?>" class="field select addr" spellcheck="true" rows="1" 
-			cols="65" onkeyup=""></textarea>
+			cols="55" onkeyup=""></textarea>
 			<label for="areaDescription<?php echo "_".$index?>_id">Description</label>
 		</span>
 		

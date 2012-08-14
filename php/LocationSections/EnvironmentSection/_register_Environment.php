@@ -3,7 +3,7 @@ function registerEnvironment() {
 	
 	$environment_select_option = $_POST["environment_0"];			// get the select option value
 	if ($environment_select_option != "New")						// if its not "New", don't add anything
-		return $environment_select_option;
+		return substr($environment_select_option, 0, -1);
 		
 	include_once('WeatherSection/_register_Weather.php');			// Weather
 	$WEATHER_idWEATHER = registerWeather();

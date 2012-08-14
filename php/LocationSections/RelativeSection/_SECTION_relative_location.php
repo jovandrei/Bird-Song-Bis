@@ -3,9 +3,6 @@
 	<?php echo options_section2("relative_location_has_marker", $index); ?>
 	
 	<div class='more-content2'>
-		<div>
-			<?php include('/php/LocationSections/RelativeSection/RelativeSection.php');?>
-		</div>
-		<a href="#" tabindex="-1"> ------------------------------------------------------ </a>
+		<?php include('/php/LocationSections/RelativeSection/RelativeSection.php');?>
 	</div>
 </div>

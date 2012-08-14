@@ -3,7 +3,7 @@ function registerVegetation() {
 	
 	$vegetation_select_option = $_POST["vegetation_0"];			// get the select option value
 	if ($vegetation_select_option != "New")					// if its not "New", don't add anything
-		return $vegetation_select_option;
+		return substr($vegetation_select_option, 0, -1);
 		
 	$vegetationType = $_POST["vegetationType_0"];
 	

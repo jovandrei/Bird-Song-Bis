@@ -3,7 +3,7 @@ function registerWeather() {
 	
 	$weather_select_option = $_POST["weather_0"];			// get the select option value
 	if ($weather_select_option != "New")					// if its not "New", don't add anything
-		return $weather_select_option;
+		return substr($weather_select_option, 0, -1);
 		
 	$weatherDescription = $_POST["weatherDescription_0"];
 	

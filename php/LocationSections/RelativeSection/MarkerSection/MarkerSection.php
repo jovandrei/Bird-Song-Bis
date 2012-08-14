@@ -11,7 +11,7 @@
 		
 		<span>
 			<textarea id="markerDescription<?php echo "_".$index?>_id"  name="markerDescription<?php echo "_".$index?>" class="field select addr" spellcheck="true" rows="1" 
-			cols="65" onkeyup=""></textarea>
+			cols="55" onkeyup=""></textarea>
 			<label for="markerDescription<?php echo "_".$index?>_id">Description</label>
 		</span>
 		

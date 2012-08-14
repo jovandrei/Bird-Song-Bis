@@ -1,10 +1,13 @@
 <?php 
 function registerMarker($relativeLocationIndex) {
 	
+	$MARKER_idMARKER = $_POST["Marker_0"];
+	if ($MARKER_idMARKER != "New")
+		return substr($MARKER_idMARKER, 0, -1);
+		
+		
 	include_once('AreaSection/_register_Area.php');
-	registerArea($relativeLocationIndex);
-	$AREA_idAREA = getArea_IDS(0);
-	$AREA_REGION_idREGION = getRegion_IDS(0);
+	$AREA_idAREA = registerArea($relativeLocationIndex);
 	
 	$markerDescription = $_POST["markerDescription_$relativeLocationIndex"];
 	$markerName = $_POST["markerName_$relativeLocationIndex"];
@@ -19,16 +22,12 @@ function registerMarker($relativeLocationIndex) {
 	$sql .= ");";
 	
 	mysql_query($sql);
-}
-
-function getMarker_IDS($pos) {
-	$tabla="marker";
+	
 	$sql = "SELECT Max(idMARKER) from $tabla";
 	$result = mysql_query($sql);
 	$data = mysql_fetch_array($result);
-	$id = $data[$pos];
-		
-	return $id;
+	$MARKER_idMARKER = $data[0];
+	return $MARKER_idMARKER;
 }
 
 ?> 

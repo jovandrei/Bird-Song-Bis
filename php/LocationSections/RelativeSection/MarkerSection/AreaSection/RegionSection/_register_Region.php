@@ -1,6 +1,10 @@
 <?php 
 function registerRegion($relativeLocationIndex) {
 	
+	$REGION_idREGION = $_POST["Area_0"];
+	if ($REGION_idREGION != "New")
+		return substr($REGION_idREGION, 0, -1);
+		
 	$regionName = $_POST["regionName_$relativeLocationIndex"];
 	$country = $_POST["country_$relativeLocationIndex"];
 	$state_or_province = $_POST["state_or_province_$relativeLocationIndex"];
@@ -17,17 +21,12 @@ function registerRegion($relativeLocationIndex) {
 	$sql .= ");";
 	
 	mysql_query($sql);
-}
-
-function getRegion_IDS($pos) {
-	$tabla="region";
+	
 	$sql = "SELECT Max(idREGION) from $tabla";
 	$result = mysql_query($sql);
 	$data = mysql_fetch_array($result);
-	$id = $data[$pos];
-		
-	return $id;
+	$REGION_idREGION = $data[0];
+	return $REGION_idREGION;
 }
-
 
 ?> 
