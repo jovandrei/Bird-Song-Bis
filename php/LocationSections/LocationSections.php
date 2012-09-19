@@ -1,5 +1,4 @@
 <div >
-	
 	<div id="relative_location_section">
 		<?php	
 			include('/php/LocationSections/RelativeSection/_ADD_relative_location.php'); 
@@ -27,7 +26,7 @@
 		?>
 	</div>
 
-	<a href="#" tabindex="-1"> ------------------------------------------------------ </a>
+	<a href="#" tabindex="-1" class="invisible"> ------------------------------------------------------ </a>
 	<li class="complex notranslate">
 		<div>
 			<span>

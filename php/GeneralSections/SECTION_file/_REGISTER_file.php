@@ -13,16 +13,26 @@ function REGISTER_file($fileIndex) {
 	$uploadedFile = "file_$fileIndex";
 	$target_path = $target_path . basename( $_FILES['file_0']['name']); 
 
-	
-	if(move_uploaded_file($_FILES[$uploadedFile]["tmp_name"],
-      "upload/" . $_FILES[$uploadedFile]["name"])) {
-	    echo "The file ".  basename( $_FILES[$uploadedFile]['name']). 
+	/*
+	if(move_uploaded_file($_FILES["file"]["tmp_name"],
+      "upload/" . $_FILES["file"]["name"])) {
+	    echo "The file ".  basename( $_FILES["file"]['name']). 
 	    " has been uploaded";
 	} else{
 	    echo "There was an error uploading the file, please try again!";
 	}
-	
-	
+	*//*
+	if ($_FILES["file"]["error"] > 0) {
+    	echo "Return Code: " . $_FILES["file"]["error"] . "<br />";
+    } else {
+	    if (file_exists("upload/" . $_FILES["file"]["name"])) {
+		} else {
+			move_uploaded_file($_FILES["file"]["tmp_name"],
+			"upload/" . $_FILES["file"]["name"]);
+		}
+	}*/
+	//move_uploaded_file($_FILES["file"]["tmp_name"],"" . $_FILES["file"]["name"]);
+	include('../../uploader.php');
 	/*
 	$sql = "INSERT INTO $tabla (idABSOLUTE_LOCATION, ) VALUES (";
 	$sql .= "NULL";

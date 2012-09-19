@@ -24,6 +24,8 @@
 					'/php/LocationSections/RelativeSection/_SECTION_relative_location.php');" 
 					VALUE="+1 Add one Marker" class="right small boton"></h5>
 		</div>
-		<a href="#" tabindex="-1"> ------------------------------------------------------ </a>
+		<a href="#" tabindex="-1" class="invisible"> ------------------------------------------------------ </a>
+		<a href="#" tabindex="-1" class="invisible"> ------------------------------------------------------ </a>
+		<a href="#" tabindex="-1" class="invisible"> ------------------------------------------------------ </a>
 	</div>
 </div>

@@ -1,7 +1,7 @@
 
 <li class="complex notranslate">		
 	<div>
-		<a href="#" tabindex="-1"> ------------------------------------------------------ </a>
+		<a href="#" tabindex="-1" class="invisible"> ------------------------------------------------------ </a>
 		<span>
 			<label class ="nojump" for="relativeDistance<?php echo "_".$index?>_id">Recorded</label>
 			<input id="relativeDistance<?php echo "_".$index?>_id" name="relativeDistance<?php echo "_".$index?>" type="text" class="field text addr" value="" size="20" />

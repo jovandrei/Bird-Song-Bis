@@ -6,6 +6,6 @@
 		<div>
 			<?php include('/php/LocationSections/AbsoluteSection/AbsoluteSection.php'); ?>
 		</div>
-		<a href="#" tabindex="-1"> ------------------------------------------------------ </a>
+		<a href="#" tabindex="-1" class="invisible"> ------------------------------------------------------ </a>
 	</div>
 </div>

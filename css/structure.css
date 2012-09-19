@@ -1,6 +1,6 @@
 html
 {
-	background:#eee
+	/*background:#eee*/
 }
 
 body
@@ -81,7 +81,7 @@ button.btTxt
 .more-info > h4{
   background-image: url('../images/dropdown_sprites.jpg');
   background-repeat: no-repeat;
-  padding: .25em 0 .25em 25px;
+  padding: 0.25em 0 0em 25px;
   cursor: pointer;
   color: #4183C4;
   font-weight: normal;
