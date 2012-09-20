@@ -122,7 +122,7 @@ table.clean a, table.clean th span, table.clean td span { padding: 0; }
 
 /* 						GFX  & COLOURS						*/
 .arrow { font-size: 0.9em; line-height: 1.3em; padding-left: 24px !important;
-	background: transparent url('/images/themes/default/arrowThemeBG.png') no-repeat scroll left center; 
+	background: transparent url('http://www.anime-planet.com/images/themes/default/arrowThemeBG.png') no-repeat scroll left center; 
 } img.avatar, img.border, div.border { padding: 8px; border: solid 1px #919191; background-color: #FFF; font-size: 0.6em; 
 } .alt { background-color:#F7E2D6;
 }
@@ -130,7 +130,7 @@ table.clean a, table.clean th span, table.clean td span { padding: 0; }
 /*						GENRES						*/
 .genres, .genres li { list-style: none; padding: 0; margin: 0; 
 } .genres { padding: 0.4em 0 0.2em; width:124px;
-} .genres li { padding: 0 20px 0.2em 0; width:104px; background: transparent url('/images/layout/listBulletSmallSquare.gif') no-repeat scroll 10px 0.6em;
+} .genres li { padding: 0 20px 0.2em 0; width:104px; background: transparent url('http://www.anime-planet.com/images/layout/listBulletSmallSquare.gif') no-repeat scroll 10px 0.6em;
 } .genres a { display: block; font-size: 0.94em; font-weight: bold; line-height: 1.3em; padding: 0 3px 0.2em 26px; 
 } 
 
@@ -148,101 +148,101 @@ table.clean a, table.clean th span, table.clean td span { padding: 0; }
 .jumpRecs, .moreTags, .listAdd, .delete, .listCompare, .listUncompare, .customList, .recHover, 
 .watching, .viewComments, .prefOn, .prefOff, .screenshots {
 	padding-left: 25px !important; padding-right: 0 !important; 
-} .type { background: transparent url('/images/layout/iconType.png') no-repeat scroll left top; 
-} .studio { background: transparent url('/images/layout/iconStudio.png') no-repeat scroll left top; 
-} .year { background: transparent url('/images/layout/iconYear.png') no-repeat scroll left top; 
-} .volumes { background: transparent url('/images/layout/iconVolumes.png') no-repeat scroll left top; 
-} .author { background: transparent url('/images/layout/iconAuthor.png') no-repeat scroll left top; 
-} .artist { background: transparent url('/images/layout/iconArtist.png') no-repeat scroll left top; 
-} .artist { background: transparent url('/images/layout/iconArtist.png') no-repeat scroll left top; 
-} .anime { background: transparent url('/images/layout/iconType.png') no-repeat scroll left top; 
-} .manga { background: transparent url('/images/layout/iconVolumes.png') no-repeat scroll left top; 
-} .season4 { background: transparent url('/images/layout/iconSeason4.png') no-repeat scroll left top; 
-} .season1 { background: transparent url('/images/layout/iconSeason1.png') no-repeat scroll left top; 
-} .season2 { background: transparent url('/images/layout/iconSeason2.png') no-repeat scroll left top; 
-} .season3 { background: transparent url('/images/layout/iconSeason3.png') no-repeat scroll left top; 
+} .type { background: transparent url('http://www.anime-planet.com/images/layout/iconType.png') no-repeat scroll left top; 
+} .studio { background: transparent url('http://www.anime-planet.com/images/layout/iconStudio.png') no-repeat scroll left top; 
+} .year { background: transparent url('http://www.anime-planet.com/images/layout/iconYear.png') no-repeat scroll left top; 
+} .volumes { background: transparent url('http://www.anime-planet.com/images/layout/iconVolumes.png') no-repeat scroll left top; 
+} .author { background: transparent url('http://www.anime-planet.com/images/layout/iconAuthor.png') no-repeat scroll left top; 
+} .artist { background: transparent url('http://www.anime-planet.com/images/layout/iconArtist.png') no-repeat scroll left top; 
+} .artist { background: transparent url('http://www.anime-planet.com/images/layout/iconArtist.png') no-repeat scroll left top; 
+} .anime { background: transparent url('http://www.anime-planet.com/images/layout/iconType.png') no-repeat scroll left top; 
+} .manga { background: transparent url('http://www.anime-planet.com/images/layout/iconVolumes.png') no-repeat scroll left top; 
+} .season4 { background: transparent url('http://www.anime-planet.com/images/layout/iconSeason4.png') no-repeat scroll left top; 
+} .season1 { background: transparent url('http://www.anime-planet.com/images/layout/iconSeason1.png') no-repeat scroll left top; 
+} .season2 { background: transparent url('http://www.anime-planet.com/images/layout/iconSeason2.png') no-repeat scroll left top; 
+} .season3 { background: transparent url('http://www.anime-planet.com/images/layout/iconSeason3.png') no-repeat scroll left top; 
 
-} .vote { background: transparent url('/images/layout/iconVote.png') no-repeat scroll left 4px; 
-} .camera {	background: transparent url('/images/layout/iconCamera.png') no-repeat scroll 0 0 !important; 
+} .vote { background: transparent url('http://www.anime-planet.com/images/layout/iconVote.png') no-repeat scroll left 4px; 
+} .camera {	background: transparent url('http://www.anime-planet.com/images/layout/iconCamera.png') no-repeat scroll 0 0 !important; 
 
-} .jump { background: transparent url('/images/layout/iconJump.png') no-repeat scroll left top !important;
+} .jump { background: transparent url('http://www.anime-planet.com/images/layout/iconJump.png') no-repeat scroll left top !important;
 
-} .check { background: transparent url('/images/layout/iconCheck.png') no-repeat scroll left center;
-} .redx { background: transparent url('/images/layout/iconRedx.png') no-repeat scroll left top;
-} .addFriend { background: transparent url('/images/layout/iconAddFriend.png') no-repeat scroll left top !important;
-} .removeFriend { background: transparent url('/images/layout/iconRemoveFriend.png') no-repeat scroll left top !important;
-} .addFriendSmall { background: transparent url('/images/layout/iconAddFriendSmall.png') no-repeat scroll left top !important;
-} .removeFriendSmall { background: transparent url('/images/layout/iconRemoveFriendSmall.png') no-repeat scroll left top !important;
-
-
-} .editProfile { background: transparent url('/images/layout/iconEditProfile.png') no-repeat scroll left top;
-} .editPreferences { background: transparent url('/images/layout/iconEditPreferences.png') no-repeat scroll left top;
-} .emailPassword { background: transparent url('/images/layout/iconEmailPassword.png') no-repeat scroll left top;
-} .deleteAccount { background: transparent url('/images/layout/iconDelete.png') no-repeat scroll left top;
+} .check { background: transparent url('http://www.anime-planet.com/images/layout/iconCheck.png') no-repeat scroll left center;
+} .redx { background: transparent url('http://www.anime-planet.com/images/layout/iconRedx.png') no-repeat scroll left top;
+} .addFriend { background: transparent url('http://www.anime-planet.com/images/layout/iconAddFriend.png') no-repeat scroll left top !important;
+} .removeFriend { background: transparent url('http://www.anime-planet.com/images/layout/iconRemoveFriend.png') no-repeat scroll left top !important;
+} .addFriendSmall { background: transparent url('http://www.anime-planet.com/images/layout/iconAddFriendSmall.png') no-repeat scroll left top !important;
+} .removeFriendSmall { background: transparent url('http://www.anime-planet.com/images/layout/iconRemoveFriendSmall.png') no-repeat scroll left top !important;
 
 
-} .watching { background: transparent url('/images/layout/iconWatching.gif') no-repeat scroll left 2px !important;
-} .viewComments { background: transparent url('/images/layout/iconComment.png') no-repeat scroll 0 top !important;
-} .prefOn { background: transparent url('/images/layout/iconPref.png') no-repeat scroll 0 -96px !important;
-} .prefOff { background: transparent url('/images/layout/iconPref.png') no-repeat scroll 0 4px !important;
+} .editProfile { background: transparent url('http://www.anime-planet.com/images/layout/iconEditProfile.png') no-repeat scroll left top;
+} .editPreferences { background: transparent url('http://www.anime-planet.com/images/layout/iconEditPreferences.png') no-repeat scroll left top;
+} .emailPassword { background: transparent url('http://www.anime-planet.com/images/layout/iconEmailPassword.png') no-repeat scroll left top;
+} .deleteAccount { background: transparent url('http://www.anime-planet.com/images/layout/iconDelete.png') no-repeat scroll left top;
 
-} .edit { background: transparent url('/images/layout/iconEditPen.png') no-repeat scroll left top; padding: 1px 0 0 19px; 
-} .delete { background: transparent url('/images/layout/iconDeleteSmall.png') no-repeat scroll left center !important; padding: 1px 0 0 19px; 
+
+} .watching { background: transparent url('http://www.anime-planet.com/images/layout/iconWatching.gif') no-repeat scroll left 2px !important;
+} .viewComments { background: transparent url('http://www.anime-planet.com/images/layout/iconComment.png') no-repeat scroll 0 top !important;
+} .prefOn { background: transparent url('http://www.anime-planet.com/images/layout/iconPref.png') no-repeat scroll 0 -96px !important;
+} .prefOff { background: transparent url('http://www.anime-planet.com/images/layout/iconPref.png') no-repeat scroll 0 4px !important;
+
+} .edit { background: transparent url('http://www.anime-planet.com/images/layout/iconEditPen.png') no-repeat scroll left top; padding: 1px 0 0 19px; 
+} .delete { background: transparent url('http://www.anime-planet.com/images/layout/iconDeleteSmall.png') no-repeat scroll left center !important; padding: 1px 0 0 19px; 
 
 } .editButton span, .delButton span, .entryButton span, .commentButton span, .rssButton span, .listAddButton span, .recHoverButton span, .addRecsButton span, .editRecsButton span { 
 	margin-left: -9999px; 
 } .editButton, .delButton, .entryButton, .commentButton, .rssButton, .listAddButton, .recHoverButton, .addRecsButton, .editRecsButton{ 
 	display: block; height: 16px; width: 16px; overflow: hidden; padding: 0; margin: 0 auto;
-} .commentButton { background: transparent url('/images/layout/iconComment.png') no-repeat scroll center top; 
-} .editButton { background: transparent url('/images/layout/iconEditPen.png') no-repeat scroll center top; 
-} .delButton { background: transparent url('/images/layout/iconDeleteSmall.png') no-repeat scroll center top; 
-} .entryButton { background: transparent url('/images/layout/iconEntry.png') no-repeat scroll center top; 
-} .rssButton { background: transparent url('/images/layout/iconRss.png') no-repeat scroll center top; 
-} .listAddButton { background: transparent url('/images/layout/iconListAdd.png') no-repeat scroll center top; 
-} .recHoverButton { background: transparent url('/images/layout/iconRecHover.png') no-repeat scroll center top; width: 17px;
-} .addRecsButton { background: transparent url('/images/layout/iconAddRecs.png') no-repeat scroll center top; width: 17px;
-} .editRecsButton { background: transparent url('/images/layout/iconEditRecs.png') no-repeat scroll center top; width: 17px;
+} .commentButton { background: transparent url('http://www.anime-planet.com/images/layout/iconComment.png') no-repeat scroll center top; 
+} .editButton { background: transparent url('http://www.anime-planet.com/images/layout/iconEditPen.png') no-repeat scroll center top; 
+} .delButton { background: transparent url('http://www.anime-planet.com/images/layout/iconDeleteSmall.png') no-repeat scroll center top; 
+} .entryButton { background: transparent url('http://www.anime-planet.com/images/layout/iconEntry.png') no-repeat scroll center top; 
+} .rssButton { background: transparent url('http://www.anime-planet.com/images/layout/iconRss.png') no-repeat scroll center top; 
+} .listAddButton { background: transparent url('http://www.anime-planet.com/images/layout/iconListAdd.png') no-repeat scroll center top; 
+} .recHoverButton { background: transparent url('http://www.anime-planet.com/images/layout/iconRecHover.png') no-repeat scroll center top; width: 17px;
+} .addRecsButton { background: transparent url('http://www.anime-planet.com/images/layout/iconAddRecs.png') no-repeat scroll center top; width: 17px;
+} .editRecsButton { background: transparent url('http://www.anime-planet.com/images/layout/iconEditRecs.png') no-repeat scroll center top; width: 17px;
 		 
 } .addBlogSmall, .addCategorySmall, .showMoreSmall, .showLessSmall, .addRecsSmall, .jumpRecsSmall, .moreTagsSmall, .addFriendSmall, .removeFriendSmall {
 	padding-left: 17px !important; font-size: 0.7em; font-weight: bold; background-position: left center !important; 
-} .addBlog { background: transparent url('/images/layout/iconAddBlog.png') no-repeat scroll left top !important; 
-} .addBlogSmall { background: transparent url('/images/layout/iconAddBlogSmall.png') no-repeat scroll left top !important; 
-} .addCategory { background: transparent url('/images/layout/iconAddCategory.png') no-repeat scroll left top !important; 
-} .addCategorySmall { background: transparent url('/images/layout/iconAddCategorySmall.png') no-repeat scroll; 
-} .arrowMore { background: transparent url('/images/layout/iconArrowMore.png') no-repeat scroll left top; padding: 3px 0 3px 28px; font-size: 0.8em; 
-} .showMore { background: transparent url('/images/layout/iconShowMore.png') no-repeat scroll left top !important; 
-} .showMoreSmall { background: transparent url('/images/layout/iconShowMoreSmall.png') no-repeat scroll;
-} .importList { background: transparent url('/images/layout/iconImportList.png') no-repeat scroll left top !important;
-} .switchList { background: transparent url('/images/layout/iconSwitchList.png') no-repeat scroll left 4px !important; padding-left: 21px !important; 
-} .showLess { background: transparent url('/images/layout/iconShowLess.png') no-repeat scroll left top !important; 
-} .showLessSmall { background: transparent url('/images/layout/iconShowLessSmall.png') no-repeat scroll; 
-} .addRecs { background: transparent url('/images/layout/iconAddRecs.png') no-repeat scroll left top !important; 
-} .editRecs { background: transparent url('/images/layout/iconEditRecs.png') no-repeat scroll left top !important; 
-} .addRecsSmall { background: transparent url('/images/layout/iconAddRecsSmall.png') no-repeat scroll; 
-} .jumpRecs { background: transparent url('/images/layout/iconJumpRecs.png') no-repeat scroll left top !important; 
-} .jumpRecsSmall { background: transparent url('/images/layout/iconJumpRecsSmall.png') no-repeat scroll; 
-} .moreTags { background: transparent url('/images/layout/iconMoreTags.png') no-repeat scroll left top !important; 
-} .moreTagsSmall { background: transparent url('/images/layout/iconMoreTagsSmall.png') no-repeat scroll;
-} .lessTags { background: transparent url('/images/layout/iconLessTags.png') no-repeat scroll left top !important; 
-} .lessTagsSmall { background: transparent url('/images/layout/iconLessTagsSmall.png') no-repeat scroll; 
-} .listAdd { background: transparent url('/images/layout/iconListAdd.png') no-repeat scroll left center !important; 
-} .listAddSmall { background: transparent url('/images/layout/iconListAddSmall.png') no-repeat scroll; 
-} .listCompare { background: transparent url('/images/layout/iconListCompare.png') no-repeat scroll left top !important; 
-} .listUncompare { background: transparent url('/images/layout/iconListUncompare.png') no-repeat scroll left top !important; 
-} .addComment { background: transparent url('/images/layout/iconAddComment.png') no-repeat scroll left top !important; 
-} .addCustomList { background: transparent url('/images/layout/iconAddCustomList.png') no-repeat scroll left top !important; 
-} .customList { background: transparent url('/images/layout/iconCustomList.png') no-repeat scroll left top !important; 
-} .addSignature { background: transparent url('/images/layout/iconAddSignature.png') no-repeat scroll left top !important; 
-} .entry { background: transparent url('/images/layout/iconEntry.png') no-repeat scroll left top !important; 
-} .recHover { background: transparent url('/images/layout/iconRecHover.png') no-repeat scroll left top !important;
-} .addFavorite { background: transparent url('/images/layout/iconAddChar.png') no-repeat scroll 1px top !important; 
+} .addBlog { background: transparent url('http://www.anime-planet.com/images/layout/iconAddBlog.png') no-repeat scroll left top !important; 
+} .addBlogSmall { background: transparent url('http://www.anime-planet.com/images/layout/iconAddBlogSmall.png') no-repeat scroll left top !important; 
+} .addCategory { background: transparent url('http://www.anime-planet.com/images/layout/iconAddCategory.png') no-repeat scroll left top !important; 
+} .addCategorySmall { background: transparent url('http://www.anime-planet.com/images/layout/iconAddCategorySmall.png') no-repeat scroll; 
+} .arrowMore { background: transparent url('http://www.anime-planet.com/images/layout/iconArrowMore.png') no-repeat scroll left top; padding: 3px 0 3px 28px; font-size: 0.8em; 
+} .showMore { background: transparent url('http://www.anime-planet.com/images/layout/iconShowMore.png') no-repeat scroll left top !important; 
+} .showMoreSmall { background: transparent url('http://www.anime-planet.com/images/layout/iconShowMoreSmall.png') no-repeat scroll;
+} .importList { background: transparent url('http://www.anime-planet.com/images/layout/iconImportList.png') no-repeat scroll left top !important;
+} .switchList { background: transparent url('http://www.anime-planet.com/images/layout/iconSwitchList.png') no-repeat scroll left 4px !important; padding-left: 21px !important; 
+} .showLess { background: transparent url('http://www.anime-planet.com/images/layout/iconShowLess.png') no-repeat scroll left top !important; 
+} .showLessSmall { background: transparent url('http://www.anime-planet.com/images/layout/iconShowLessSmall.png') no-repeat scroll; 
+} .addRecs { background: transparent url('http://www.anime-planet.com/images/layout/iconAddRecs.png') no-repeat scroll left top !important; 
+} .editRecs { background: transparent url('http://www.anime-planet.com/images/layout/iconEditRecs.png') no-repeat scroll left top !important; 
+} .addRecsSmall { background: transparent url('http://www.anime-planet.com/images/layout/iconAddRecsSmall.png') no-repeat scroll; 
+} .jumpRecs { background: transparent url('http://www.anime-planet.com/images/layout/iconJumpRecs.png') no-repeat scroll left top !important; 
+} .jumpRecsSmall { background: transparent url('http://www.anime-planet.com/images/layout/iconJumpRecsSmall.png') no-repeat scroll; 
+} .moreTags { background: transparent url('http://www.anime-planet.com/images/layout/iconMoreTags.png') no-repeat scroll left top !important; 
+} .moreTagsSmall { background: transparent url('http://www.anime-planet.com/images/layout/iconMoreTagsSmall.png') no-repeat scroll;
+} .lessTags { background: transparent url('http://www.anime-planet.com/images/layout/iconLessTags.png') no-repeat scroll left top !important; 
+} .lessTagsSmall { background: transparent url('http://www.anime-planet.com/images/layout/iconLessTagsSmall.png') no-repeat scroll; 
+} .listAdd { background: transparent url('http://www.anime-planet.com/images/layout/iconListAdd.png') no-repeat scroll left center !important; 
+} .listAddSmall { background: transparent url('http://www.anime-planet.com/images/layout/iconListAddSmall.png') no-repeat scroll; 
+} .listCompare { background: transparent url('http://www.anime-planet.com/images/layout/iconListCompare.png') no-repeat scroll left top !important; 
+} .listUncompare { background: transparent url('http://www.anime-planet.com/images/layout/iconListUncompare.png') no-repeat scroll left top !important; 
+} .addComment { background: transparent url('http://www.anime-planet.com/images/layout/iconAddComment.png') no-repeat scroll left top !important; 
+} .addCustomList { background: transparent url('http://www.anime-planet.com/images/layout/iconAddCustomList.png') no-repeat scroll left top !important; 
+} .customList { background: transparent url('http://www.anime-planet.com/images/layout/iconCustomList.png') no-repeat scroll left top !important; 
+} .addSignature { background: transparent url('http://www.anime-planet.com/images/layout/iconAddSignature.png') no-repeat scroll left top !important; 
+} .entry { background: transparent url('http://www.anime-planet.com/images/layout/iconEntry.png') no-repeat scroll left top !important; 
+} .recHover { background: transparent url('http://www.anime-planet.com/images/layout/iconRecHover.png') no-repeat scroll left top !important;
+} .addFavorite { background: transparent url('http://www.anime-planet.com/images/layout/iconAddChar.png') no-repeat scroll 1px top !important; 
 	display: inline-block !important; height: 11px !important; width: 19px; padding: 0!important; margin-bottom:-1px !important;
-} .removeFavorite { background: transparent url('/images/layout/iconRemoveChar.png') no-repeat scroll 1px top !important; 
+} .removeFavorite { background: transparent url('http://www.anime-planet.com/images/layout/iconRemoveChar.png') no-repeat scroll 1px top !important; 
 	display: inline-block !important; height: 11px !important; width: 19px; padding: 0!important; margin-bottom:-1px !important;
-} .heart, .heartOn, .heartOff { background: transparent url('/images/layout/iconHearts.png') no-repeat scroll 1px 0 !important;
+} .heart, .heartOn, .heartOff { background: transparent url('http://www.anime-planet.com/images/layout/iconHearts.png') no-repeat scroll 1px 0 !important;
 	display: inline-block !important;*display:inline; *zoom:1; vertical-align: middle; height: 11px !important; width: 12px; padding: 0 !important; *padding-right: 4px!important; margin-bottom:-1px !important;
 } .heartOn, .tableHeaderStatus { background-position: 1px -40px !important; } .heartOff { background-position: 1px -80px !important;
-}.screenshots { background: transparent url('/images/layout/iconScreenshot.png') no-repeat scroll 0 0 !important; padding-left:21px !important;
+}.screenshots { background: transparent url('http://www.anime-planet.com/images/layout/iconScreenshot.png') no-repeat scroll 0 0 !important; padding-left:21px !important;
 }
 
 
@@ -274,10 +274,10 @@ table.clean a, table.clean th span, table.clean td span { padding: 0; }
     height: 31px;
     width: 67px;
 }.heartSwitch1 .heartSwitchlarge, .heartSwitchlarge a {
-    background: transparent url('/images/layout/buttonHeartsLarge.png') no-repeat scroll 0 0;
+    background: transparent url('http://www.anime-planet.com/images/layout/buttonHeartsLarge.png') no-repeat scroll 0 0;
     width: 33px;
 }.heartSwitch1 .heartSwitchsmall, .heartSwitchsmall a {
-    background: transparent url('/images/layout/buttonHeartsSmall.png') no-repeat scroll 0 0;
+    background: transparent url('http://www.anime-planet.com/images/layout/buttonHeartsSmall.png') no-repeat scroll 0 0;
     width: 21px;
 }.heartSwitch0 .heartSwitchlarge, .heartSwitch0 .heartSwitchlarge a {	width: 34px;
 }.heartSwitch1 .heartSwitchlarge {					width: 68px;
@@ -294,18 +294,18 @@ table.clean a, table.clean th span, table.clean td span { padding: 0; }
 .heartSwitch0 .heartSwitchLove a.heartBtnLove	{ background-position: center -62px; }
 .heartSwitch0 .heartSwitchHate a.heartBtnLove	{ background-position: center -93px; }
 
-.rssSmall { padding-left: 23px !important; font-size:  1.0em; background-position: left center !important; background: transparent url('/images/layout/iconRss.png') no-repeat scroll left top !important; 
+.rssSmall { padding-left: 23px !important; font-size:  1.0em; background-position: left center !important; background: transparent url('http://www.anime-planet.com/images/layout/iconRss.png') no-repeat scroll left top !important; 
 
 
 
-} .addThis { background: transparent url('/images/layout/addThis.png') no-repeat scroll left top; 
+} .addThis { background: transparent url('http://www.anime-planet.com/images/layout/addThis.png') no-repeat scroll left top; 
 	display: block; height: 18px; width: 96px; overflow: hidden; 
 } .addThis  span { display: block; margin-left: -9999px; 
-} .mediaMayhem { background: transparent url('/images/layout/mediaMayhem.gif') no-repeat scroll left top; 
+} .mediaMayhem { background: transparent url('http://www.anime-planet.com/images/layout/mediaMayhem.gif') no-repeat scroll left top; 
 	display: block; height: 39px; width: 175px; overflow: hidden; 
 } .mediaMayhem  span { display: block; margin-left: -9999px; 
 } .exclaim { padding-left: 65px; 
-} .exclaim { background: transparent url('/images/layout/iconYield.png') no-repeat scroll left center;
+} .exclaim { background: transparent url('http://www.anime-planet.com/images/layout/iconYield.png') no-repeat scroll left center;
 }
 
 
@@ -316,17 +316,17 @@ table.clean a, table.clean th span, table.clean td span { padding: 0; }
 } .links { padding: 0.4em 0; 
 } .links li { padding-bottom: 1em; 
 } .links li a {padding: 0 0 4px 28px; 
-} .myspace{ background: transparent url('/images/layout/iconMyspace.png') no-repeat scroll left top; 
-} .facebook { background: transparent url('/images/layout/iconFacebook.png') no-repeat scroll left top; 
-} .yahoo { background: transparent url('/images/layout/iconYahoo.png') no-repeat scroll left top; 
-} .linkedin { background: transparent url('/images/layout/iconLinkedin.png') no-repeat scroll left top; 
-} .flickr { background: transparent url('/images/layout/iconFlickr.png') no-repeat scroll left top; 
-} .twitter { background: transparent url('/images/layout/iconTwitter.png') no-repeat scroll left top; 
-} .youtube { background: transparent url('/images/layout/iconYoutube.png') no-repeat scroll left top; 
-} .irc { background: transparent url('/images/layout/iconIRC.png') no-repeat scroll left top; 
-} .msn { background: transparent url('/images/layout/iconMSN.png') no-repeat scroll left top; 
-} .gtalk { background: transparent url('/images/layout/iconGtalk.png') no-repeat scroll left top; 
-} .icq { background: transparent url('/images/layout/iconICQ.png') no-repeat scroll left top; 
+} .myspace{ background: transparent url('http://www.anime-planet.com/images/layout/iconMyspace.png') no-repeat scroll left top; 
+} .facebook { background: transparent url('http://www.anime-planet.com/images/layout/iconFacebook.png') no-repeat scroll left top; 
+} .yahoo { background: transparent url('http://www.anime-planet.com/images/layout/iconYahoo.png') no-repeat scroll left top; 
+} .linkedin { background: transparent url('http://www.anime-planet.com/images/layout/iconLinkedin.png') no-repeat scroll left top; 
+} .flickr { background: transparent url('http://www.anime-planet.com/images/layout/iconFlickr.png') no-repeat scroll left top; 
+} .twitter { background: transparent url('http://www.anime-planet.com/images/layout/iconTwitter.png') no-repeat scroll left top; 
+} .youtube { background: transparent url('http://www.anime-planet.com/images/layout/iconYoutube.png') no-repeat scroll left top; 
+} .irc { background: transparent url('http://www.anime-planet.com/images/layout/iconIRC.png') no-repeat scroll left top; 
+} .msn { background: transparent url('http://www.anime-planet.com/images/layout/iconMSN.png') no-repeat scroll left top; 
+} .gtalk { background: transparent url('http://www.anime-planet.com/images/layout/iconGtalk.png') no-repeat scroll left top; 
+} .icq { background: transparent url('http://www.anime-planet.com/images/layout/iconICQ.png') no-repeat scroll left top; 
 } .lastfm { background: transparent url('images/layout/iconLastfm.png') no-repeat scroll left top; 
 }
 
@@ -1223,11 +1223,11 @@ ZW	Zimbabwe */
 } .switch span { background: #D0D0D0 url('/images/themes/default/switchBG.gif') no-repeat scroll right top; 
 	display: block; padding: 0 8px 0 0; height: 21px; 
 } .switch span span { float: none; 
-} .switch span.on { background: transparent url('/images/themes/default/switchOnBG.gif') no-repeat scroll left 4px; 
+} .switch span.on { background: transparent url('http://www.anime-planet.com/images//themes/default/switchOnBG.gif') no-repeat scroll left 4px; 
 	padding: 0 0 0 20px; 
-} .switch span.off { background: transparent url('/images/themes/default/switchOffBG.gif') no-repeat scroll left 4px; 
+} .switch span.off { background: transparent url('http://www.anime-planet.com/images//themes/default/switchOffBG.gif') no-repeat scroll left 4px; 
 	padding: 0 0 0 20px; 
-} .switch span.exclude { background: transparent url('/images/themes/default/switchExcludeBG.gif') no-repeat scroll left 4px; 
+} .switch span.exclude { background: transparent url('http://www.anime-planet.com/images//themes/default/switchExcludeBG.gif') no-repeat scroll left 4px; 
 	padding: 0 0 0 20px; 
 
 }.switchTheme { background: #69101C url('/images/themes/default/switchThemeBG.gif') no-repeat scroll left top; 
@@ -1250,9 +1250,9 @@ ZW	Zimbabwe */
 } 
 	
 span.null, span.include, span.exclude { display: block; line-height: 1.4em; padding: 2px 6px 2px 17px;
-} span.null { background: transparent url('/images/layout/nullBG.gif') no-repeat scroll left 4px; 
-} span.include { background: transparent url('/images/layout/includeBG.gif') no-repeat scroll left 4px; 
-} span.exclude { background: transparent url('/images/layout/excludeBG.gif') no-repeat scroll left 4px; 
+} span.null { background: transparent url('http://www.anime-planet.com/images//layout/nullBG.gif') no-repeat scroll left 4px; 
+} span.include { background: transparent url('http://www.anime-planet.com/images//layout/includeBG.gif') no-repeat scroll left 4px; 
+} span.exclude { background: transparent url('http://www.anime-planet.com/images//layout/excludeBG.gif') no-repeat scroll left 4px; 
 }
 
 /*						FORM BUTTONS					*/
@@ -1275,7 +1275,7 @@ span.null, span.include, span.exclude { display: block; line-height: 1.4em; padd
 	width: 70px !important; height: 29px !important;
 } .buttonUpdateRecs { background: #69101C url('/images/themes/default/buttonUpdateRecs.gif') no-repeat scroll left top; 
 	width: 118px !important;
-} .buttonApplyFilters { background: #69101C url('/images/themes/default/buttonApplyFilters.gif') no-repeat scroll left top;
+} .buttonApplyFilters { background: #69101C url('../images/button_apply.jpg') no-repeat scroll left top;
 	width: 99px !important; height: 29px !important; 
 } .buttonSubmitSmall { background: #69101C url('/images/themes/default/buttonApplyFilters.gif') no-repeat scroll left top;
 	width: 70px !important; height: 29px !important; 

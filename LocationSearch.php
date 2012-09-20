@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title> Location Search</title>
-		<?php require_once('/php_search/CommonSections/headerSection.php'); ?>
+		<?php require_once('/php/CommonSections/headerSection.php'); ?>
 	</head>
 	
 	<body id="public">

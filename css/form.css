@@ -74,7 +74,7 @@ form ul{
 form li{
 	margin:0;
 	padding:6px 1% 9px 1%;
-	clear:both;
+	/*clear:both;*/
 	background-color:transparent;
 	position:relative;
 	-webkit-transition:background-color 350ms ease-out;
@@ -568,7 +568,7 @@ button.link:hover{
 	width:65%
 }
 .noI form li,.altInstruct form li{
-	width:auto !important
+	/*width:auto !important*/
 }
 .noI .leftLabel .buttons,.noI .rightLabel .buttons{
 	padding-left:31%

@@ -62,17 +62,17 @@ body { background: url('../images/background.jpg') repeat-x scroll center -30px;
 	width: 974px;
 	margin: 0 auto; padding: 0 3px;
 } #shellHeader, #shellNav, #shellContent, #shellFooter {
-	background: transparent url('/images/layout/shellBody.png') repeat-y center top;
+	background: transparent url('http://www.anime-planet.com/images/layout/shellBody.png') repeat-y center top;
 	padding: 0 32px 16px;
 	width: 942px;
 } #shellTop {
-	background: transparent url('/images/layout/shellTop.png') no-repeat center top;
+	background: transparent url('http://www.anime-planet.com/images/layout/shellTop.png') no-repeat center top;
 	width: 1006px; height: 15px;
 	padding: 0;
 } #shellHeader {
 	padding: 7px 32px 0;
 } #shellTheme {
-	background: transparent url('/images/layout/shellTheme2.png') no-repeat center top;
+	background: transparent url('http://www.anime-planet.com/images/layout/shellTheme2.png') no-repeat center top;
 	padding: 0 32px 0 32px;
 	width: 942px; height: 130px;
 } #shellNav { 
@@ -81,7 +81,7 @@ body { background: url('../images/background.jpg') repeat-x scroll center -30px;
 } #shellFooter {
 	padding-bottom: 5px;
 } #shellBot {
-	background: transparent url('/images/layout/shellBot.png') no-repeat center top;
+	background: transparent url('http://www.anime-planet.com/images/layout/shellBot.png') no-repeat center top;
 	width: 1006px; height: 16px;
 	padding: 0;
 } .shellWhite { background-color: #FFF; }
@@ -95,7 +95,7 @@ body { background: url('../images/background.jpg') repeat-x scroll center -30px;
 #logo, #search, #user { display: block; float: left; background: #FFF; }
 
 #logo { height: 63px; width: 311px; margin: 0; padding: 3px 0 5px;
-	background:#FFFFFF url('/images/themes/default/logo.gif') no-repeat scroll left top; }
+	background:#FFFFFF url('http://www.anime-planet.com/images/themes/default/logo.gif') no-repeat scroll left top; }
 #logo:hover { background-position: center -68px; }
 #logo span { margin-left: -9999px; }
 
@@ -108,19 +108,19 @@ body { background: url('../images/background.jpg') repeat-x scroll center -30px;
 #search div, #search form { margin: 0; padding: 0; }
 #search form {width:100%; position: relative}
 #search .top, #search .bot { height: 5px; margin: 0; padding: 0; }
-#search .top { background: transparent url('/images/themes/default/searchBG.gif') no-repeat scroll left top; }
-#search .bot { background: transparent url('/images/themes/default/searchBG.gif') no-repeat scroll left bottom; }
+#search .top { background: transparent url('http://www.anime-planet.com/images/themes/default/searchBG.gif') no-repeat scroll left top; }
+#search .bot { background: transparent url('http://www.anime-planet.com/images/themes/default/searchBG.gif') no-repeat scroll left bottom; }
 #search input { float: left; }
 #search input.searchField { 
 	width: 185px;  height: 1.29em; line-height: 1.3em; 
 	padding: 1px 0 0 4px; font-size: 1em; 
 	border: none; border-left: solid 1px #848484; 
-	background: transparent url('/images/themes/default/searchBG.gif') no-repeat -1px center; }
+	background: transparent url('http://www.anime-planet.com/images/themes/default/searchBG.gif') no-repeat -1px center; }
 #search #selectContainer { float: left; display: block; height: 20px; width: 84px; font-size: 0.75em; color: #AF151B; }
 #search select { width: 76px; float: left; border: none; }
 #search select option { border: none; }
 #search input.searchButton { width: 37px; height:21px; padding: 0; font-size: 0; font-weight: bold; cursor:pointer; 
-	border: none; background: #69101C url('/images/themes/default/searchBG.gif') no-repeat right center; color: #FFF; }
+	border: none; background: #69101C url('http://www.anime-planet.com/images/themes/default/searchBG.gif') no-repeat right center; color: #FFF; }
 #search ul.quickLinks { list-style-type: none; margin: 0; padding: 0.4em 0 0; font-size: 0.7em; text-align: center; }
 #search .quickLinks li { display: inline; padding: 0 8px 0 0; margin: 0 7px 0 0; line-height: 1.2em; font-size: 1em;
 	background: url("/images/layout/listBulletSmallSquare.gif") no-repeat scroll right center transparent; }
@@ -129,7 +129,7 @@ body { background: url('../images/background.jpg') repeat-x scroll center -30px;
 
 .jsSelect { border-left: 1px solid #999; padding-left: 7px; }
 .jsSelect dd { position:absolute; }
-.jsSelect dt a { background: transparent url('/images/themes/default/selectDropBG.gif') no-repeat scroll left center; 
+.jsSelect dt a { background: transparent url('http://www.anime-planet.com/images/themes/default/selectDropBG.gif') no-repeat scroll left center; 
 	display:block; padding-left: 16px; line-height: 1.8em; outline: none; }
 .jsSelect dt a span {cursor:pointer; display:block;}
 .jsSelect dd ul { border:1px solid #999; border-top-width: 0; display:none; margin: 0 0 0 6px; padding: 0 4px 5px; 
@@ -145,9 +145,9 @@ body { background: url('../images/background.jpg') repeat-x scroll center -30px;
 */
 
 #user { width: 260px; float:right; padding: 0; }
-#user div.top { background: transparent url('/images/themes/default/userTopBG.gif') no-repeat left top; height: 7px; }
-#user div.bot { background: transparent url('/images/themes/default/userBotBG.gif') no-repeat left bottom; height: 7px; }
-#user div.mid { padding: 0 10px 0.1em 10px; background: #E1E1E1 url('/images/themes/default/userBG.gif') repeat-y left top; }
+#user div.top { background: transparent url('http://www.anime-planet.com/images/themes/default/userTopBG.gif') no-repeat left top; height: 7px; }
+#user div.bot { background: transparent url('http://www.anime-planet.com/images/themes/default/userBotBG.gif') no-repeat left bottom; height: 7px; }
+#user div.mid { padding: 0 10px 0.1em 10px; background: #E1E1E1 url('http://www.anime-planet.com/images/themes/default/userBG.gif') repeat-y left top; }
 
 #user .header { color: #9C632B; font-size: 0.9em; font-weight: bold; line-height: 1.3em; }
 #user p { padding: 0; line-height: 1.3em; font-size: 0.7em; margin: 0.2em 0; }
@@ -157,10 +157,10 @@ body { background: url('../images/background.jpg') repeat-x scroll center -30px;
 #user .button a { font-size: 1.15em; font-size:0.95em; }
 #user .button { width: 87px; display: block; margin-bottom: 0.3em; font-weight: bold; text-decoration: none; font-size: 1em; }
 #user .button:hover { text-decoration: none; }
-#user .button .top { background: transparent url('/images/themes/default/userButtonBG.gif') no-repeat left top; }
+#user .button .top { background: transparent url('http://www.anime-planet.com/images/themes/default/userButtonBG.gif') no-repeat left top; }
 #user .button .mid { color: #FFF; display: block; padding: 0.1em 0 0.2em 0; line-height: 0.9em; font-size:0.95em; 
-	background: #69101C url('/images/themes/default/userButtonBG.gif') no-repeat center center; }
-#user .button .bot { background: transparent url('/images/themes/default/userButtonBG.gif') no-repeat left bottom; }
+	background: #69101C url('http://www.anime-planet.com/images/themes/default/userButtonBG.gif') no-repeat center center; }
+#user .button .bot { background: transparent url('http://www.anime-planet.com/images/themes/default/userButtonBG.gif') no-repeat left bottom; }
 
 		/* not logged in */
 #user .loggedOut {
@@ -186,9 +186,9 @@ body { background: url('../images/background.jpg') repeat-x scroll center -30px;
 	line-height: 1.6em;
 } #user li { float: left; padding-right: 11px; 
 } #user li a { padding-left:14px; }
-#user li.upAnime a { background: transparent url('/images/themes/default/userIconAnime.gif') no-repeat scroll left center; }
-#user li.upManga a { background: transparent url('/images/themes/default/userIconManga.gif') no-repeat scroll left center; }
-#user li.upBlog a { background: transparent url('/images/themes/default/userIconBlog.gif') no-repeat scroll left center; }
+#user li.upAnime a { background: transparent url('http://www.anime-planet.com/images/themes/default/userIconAnime.gif') no-repeat scroll left center; }
+#user li.upManga a { background: transparent url('http://www.anime-planet.com/images/themes/default/userIconManga.gif') no-repeat scroll left center; }
+#user li.upBlog a { background: transparent url('http://www.anime-planet.com/images/themes/default/userIconBlog.gif') no-repeat scroll left center; }
 
 
 
@@ -201,7 +201,7 @@ body { background: url('../images/background.jpg') repeat-x scroll center -30px;
 #shellNav ul { list-style-type: none; margin: 0; padding: 0; float: left; }
 #shellNav li { float: left; padding: 0; }
 #shellNav li a { padding: 0; display: block; position: relative; overflow: hidden;
-	background: #69101C url('/images/themes/default/navBG.gif') no-repeat left top; color: #FFF; }
+	background: #69101C url('http://www.anime-planet.com/images/themes/default/navBG.gif') no-repeat left top; color: #FFF; }
 #shellNav li a span { display: block; margin-left: -9999px; }
 
 #shellNav li.navAnime a { background-position: left top; width: 83px; height: 35px; }
@@ -221,7 +221,7 @@ body { background: url('../images/background.jpg') repeat-x scroll center -30px;
 #shellNav li.navForum a:hover { background-position: -543px -36px; }
 
 #shellNav #theme { float: left; width: 318px; height: 35px; padding: 0; color: #FFF; 
-	background: transparent url('/images/themes/default/themeSelectBG.gif') no-repeat scroll top left; 
+	background: transparent url('http://www.anime-planet.com/images/themes/default/themeSelectBG.gif') no-repeat scroll top left; 
 } #theme #themeHdr { float: left; padding: 0.9em 10px 0 0; width: 68px; 
 	text-align: right; font-size: 0.8em; line-height: 1.3em; 
 } #theme #themeDrop { float: left; padding: 5px 0; width: 238px; height: 25px;
@@ -239,13 +239,13 @@ body { background: url('../images/background.jpg') repeat-x scroll center -30px;
 #shellFooter #footer {
 	padding-bottom: 0;
 } #footer .top{
-	background: transparent url('/images/themes/default/box1TopBG.gif') no-repeat scroll left top;
+	background: transparent url('http://www.anime-planet.com/images/themes/default/box1TopBG.gif') no-repeat scroll left top;
 	height: 5px;
 } #footer .mid {
-	background: transparent url('/images/themes/default/box1BG.gif') repeat-y scroll left top;
+	background: transparent url('http://www.anime-planet.com/images/themes/default/box1BG.gif') repeat-y scroll left top;
 	padding: 0.5em 20px;
 } #footer .bot {
-	background: transparent url('/images/themes/default/box1BotBG.gif') no-repeat scroll left bottom;
+	background: transparent url('http://www.anime-planet.com/images/themes/default/box1BotBG.gif') no-repeat scroll left bottom;
 	height: 5px;
 } #footer h5 {
 	padding: 0 0 0.1em; margin: 0;
