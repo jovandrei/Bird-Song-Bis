@@ -109,7 +109,7 @@ img
 	background:rgba(136,223,136,0.4);
 
 	height:36px;
-	width:0%;
+	width:50%;
 }
 
 #timePlayed
@@ -118,7 +118,7 @@ img
 
 	height:36px;
 	margin-top:-36px;
-	width:0%;	
+	width:20%;	
 }
 
 /*Termina CSS controles y barra de progreso*/
