@@ -1,7 +1,7 @@
 <li class="complex notranslate">
 
 	<label class="desc2" for="Area_<?php echo $index?>_id">IN AREA</label>
-	<?php echo options_section_in2("Area", $index); ?>
+	<?php echo options_section_in2("AREA", $index); ?>
 		
 	<div class='more-content-in'>
 		<span>
@@ -17,5 +17,5 @@
 		
 	</div>
 	
-	<?php include('/php/LocationSections/RelativeSection/MarkerSection/AreaSection/RegionSection/RegionSection.php'); ?>
+	<?php include('php/LocationSections/RelativeSection/MarkerSection/AreaSection/RegionSection/RegionSection.php'); ?>
 </li>

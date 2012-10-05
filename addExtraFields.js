@@ -14,7 +14,7 @@ $(window).load(function() {
 	
 	myMap['nextVegetationSpecies'] = -1;
 	AddElement('nextVegetationSpecies', '#extraVegetationSpecies', 
-	'/php/LocationSections/EnvironmentSection/VegetationSection/_AddVegetationSpeciesSection.php');
+	'php/LocationSections/EnvironmentSection/VegetationSection/_AddVegetationSpeciesSection.php');
 	
 	
 	

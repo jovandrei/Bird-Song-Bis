@@ -4,7 +4,7 @@
 		<div class="tabNav">
 			<ul>
 				<li ><a href="ANALYSIS.php"><span>Analysis</span></a></li>
-				<li class="selected"><a href="Location.php"><span>Location</span></a></li>
+				<li class="selected"><a href="Location.php"><span>Researcher</span></a></li>
 				<li><a href="Location.php"><span>Subject</span></a></li>
 				<li><a href="Location.php"><span>Track</span></a></li>
 			</ul>
@@ -14,14 +14,14 @@
 	</div>	
 	
 	<form class="wufoo" autocomplete="on" enctype="multipart/form-data" method="post" novalidate
-		action="php/LocationSections/_register_Location.php">
+		action="php/GeneralSections/_SECTION_researcher/_REGISTER_researcher.php">
 
 		<header class="info">
-			<h2>Location</h2>
+			<h2>Researcher</h2>
 		</header>
 
 		<ul>
-			<?php include('php/LocationSections/LocationSections.php'); ?>
+			<?php $index = 0;  include('php/GeneralSections/_SECTION_researcher/_ADD_researcher.php'); ?>
 			<?php include('php/CommonSections/buttonSection.php');?>
 		</ul>
 	</form> 

@@ -1,5 +1,5 @@
 <?php
-	require_once('/php/CommonSections/select_options_sections.php');
+	include_once("select_options_sections.php");
 ?>
 
 <!-- CSS -->

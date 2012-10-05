@@ -1,7 +1,7 @@
 <li class="complex notranslate">
 
 	<label class="desc2" for="Weather_<?php echo $index?>_id">HAS WEATHER</label>
-	<?php echo options_section_in2("weather", $index); ?>
+	<?php echo options_section_in2("WEATHER", $index); ?>
 	
 	<div class='more-content-in'>
 		<span>

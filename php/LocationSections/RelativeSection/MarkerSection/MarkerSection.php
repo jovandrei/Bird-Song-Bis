@@ -1,7 +1,7 @@
 <li class="complex notranslate">
 
 	<label class="desc2" for="Marker_<?php echo $index?>_id">HAS MARKER</label>
-	<?php echo options_section_in2("Marker", $index); ?>
+	<?php echo options_section_in2("MARKER", $index); ?>
 	
 	<div class='more-content-in'>
 		<span>
@@ -17,5 +17,5 @@
 		
 	</div>
 	
-	<?php include('/php/LocationSections/RelativeSection/MarkerSection/AreaSection/AreaSection.php'); ?>
+	<?php include('php/LocationSections/RelativeSection/MarkerSection/AreaSection/AreaSection.php'); ?>
 </li>

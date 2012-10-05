@@ -4,21 +4,21 @@ include('conexion.php');
 $link = Conectarse();
 
 $selectOptionElements = array(
-	"researcher"					=>	array ("first_name"," ",	"last_name"),
-	"Location"						=>	array (" "),
-	"absolute_location"				=>	array ("latitude_degrees","°",	"latitude_minutes","\"",	"latitude_seconds","'"," ",		"latitude_orientation",		", ",
+	"RESEARCHER"					=>	array ("first_name"," ",	"last_name"),
+	"LOCATION"						=>	array (" "),
+	"ABSOLUTE_LOCATION"				=>	array ("latitude_degrees","°",	"latitude_minutes","\"",	"latitude_seconds","'"," ",		"latitude_orientation",		", ",
 												"longitude_degrees","°","longitude_minutes","\"",	"longitude_seconds","'"," ",	"longitude_orientation",	", ",
 												"elevation", "m "),
-	"relative_location_has_marker"	=>	array ("distance",	" m ",	"position",
+	"RELATIVE_LOCATION_HAS_MARKER"	=>	array ("distance",	" m ",	"position",
 												"$",		"MARKER_idMARKER",		"MARKER",	"name",		"$"),
-	"Marker"						=>	array ("name"),
-	"Area"							=>	array ("name"),
-	"Region"						=>	array ("name"),
-	"environment"					=>	array ("comments_features"),
-	"weather"						=>	array ("description"),
-	"vegetation"					=>	array ("vegetation_type"),
-	"vegetation_has_vegetation_species"	=>	array ("average_density",	", "	, "projected_cover",	", ",	 "average_height"),
-	"vegetation_species"			=>	array ("scientific_name", 	", "	,"common_name")
+	"MARKER"						=>	array ("name"),
+	"AREA"							=>	array ("name"),
+	"REGION"						=>	array ("name"),
+	"ENVIRONMENT"					=>	array ("comments_features"),
+	"WEATHER"						=>	array ("description"),
+	"VEGETATION"					=>	array ("vegetation_type"),
+	"VEGETATION_HAS_VEGETATION_SPECIES"	=>	array ("average_density",	", "	, "projected_cover",	", ",	 "average_height"),
+	"VEGETATION_SPECIES"			=>	array ("scientific_name", 	", "	,"common_name")
   );
 
 // Metodo que jala de la BD todos los registros de la tabla $type

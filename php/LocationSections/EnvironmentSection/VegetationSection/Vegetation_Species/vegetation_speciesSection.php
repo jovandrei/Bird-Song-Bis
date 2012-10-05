@@ -1,7 +1,7 @@
 <li class="complex notranslate">
 
 	<label class="desc2" for="vegetation_species_<?php echo $index?>_id">HAS VEGETATION SPECIES</label>
-	<?php echo options_section_in2("vegetation_species", $index); ?>
+	<?php echo options_section_in2("VEGETATION_SPECIES", $index); ?>
 	
 	<div class='more-content-in'>
 		<span class="left">

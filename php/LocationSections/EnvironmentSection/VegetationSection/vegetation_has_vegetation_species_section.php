@@ -1,7 +1,7 @@
 <li class="complex notranslate">
 
 	<h4 class='compressed'><label class="desc2" for="vegetation_has_vegetation_species_<?php echo $index?>_id">VEGETATION HAS VEGETATION SPECIES <?php echo $index+1?></label></h4>
-	<?php echo options_section_in2("vegetation_has_vegetation_species", $index); ?>
+	<?php echo options_section_in2("VEGETATION_HAS_VEGETATION_SPECIES", $index); ?>
 	
 	<div class="more-content-in">
 		<span>
@@ -25,7 +25,7 @@
 	</div>
 	
 	<div class="more-content-in">
-		<?php include('/php/LocationSections/EnvironmentSection/VegetationSection/Vegetation_Species/vegetation_speciesSection.php'); ?>
+		<?php include('php/LocationSections/EnvironmentSection/VegetationSection/Vegetation_Species/vegetation_speciesSection.php'); ?>
 	</div>
 	
 		

@@ -42,17 +42,17 @@ var matrizFields = [["first_name" , "last_name", "email"],
 					];
 
 var matrizTableParentsChilds = [//table							parent_id,	parent_child_id_name
-                                ["researcher", 						-1,		 	""],
-                                ["absolute_location", 				-1, 		""],
-                                ["relative_location_has_marker", 	-1,			""],
-                                ["Marker", 							 2, 	 	"MARKER_idMARKER"],
-                                ["Area", 							 3,		 	"AREA_idAREA"],
-                                ["Region",							 4,			"REGION_idREGION"],
-                                ["environment",						-1,			""],
-                                ["weather",							 6,			"WEATHER_idWEATHER"],
-                                ["vegetation",						 6,			"VEGETATION_idVEGETATION"],
-                                ["vegetation_has_vegetation_species",8,			"idVEGETATION"],
-                                ["vegetation_species",				 9,			"VEGETATION_SPECIES_idVEGETATION_SPECIES"]
+                                ["RESEARCHER", 						-1,		 	""],
+                                ["ABSOLUTE_LOCATION", 				-1, 		""],
+                                ["RELATIVE_LOCATION_HAS_MARKER", 	-1,			""],
+                                ["MARKER", 							 2, 	 	"MARKER_idMARKER"],
+                                ["AREA", 							 3,		 	"AREA_idAREA"],
+                                ["REGION",							 4,			"REGION_idREGION"],
+                                ["ENVIRONMENT",						-1,			""],
+                                ["WEATHER",							 6,			"WEATHER_idWEATHER"],
+                                ["VEGETATION",						 6,			"VEGETATION_idVEGETATION"],
+                                ["VEGETATION_HAS_VEGETATION_SPECIES",8,			"idVEGETATION"],
+                                ["VEGETATION_SPECIES",				 9,			"VEGETATION_SPECIES_idVEGETATION_SPECIES"]
                                 
                                 ];
 // Cuando se selecciona una opcion de algun menu desplegable, se rellenan los campos de la forma 

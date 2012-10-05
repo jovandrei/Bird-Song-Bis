@@ -3,10 +3,10 @@
 	<div class="top2">
 		<div class="tabNav">
 			<ul>
-				<li ><a href="/UCLA/Analysis.php"><span>Analysis</span></a></li>
-				<li class="selected"><a href="/UCLA/LocationSearch.php"><span>Location</span></a></li>
-				<li><a href="/UCLA/Location.php"><span>Subject</span></a></li>
-				<li><a href="/UCLA/Location.php"><span>Track</span></a></li>
+				<li ><a href="Analysis.php"><span>Analysis</span></a></li>
+				<li class="selected"><a href="LocationSearch.php"><span>Location</span></a></li>
+				<li><a href="Location.php"><span>Subject</span></a></li>
+				<li><a href="Location.php"><span>Track</span></a></li>
 			</ul>
 			<div class="clear"></div>
 		</div> <!-- / .tabNav -->
@@ -29,12 +29,12 @@
 						
 				<div class='more-content'>
 					<div>
-						<?php include('/php_search/LocationSections/filters.php'); ?>
+						<?php include('php_search/LocationSections/filters.php'); ?>
 					</div>
 				</div>
 			</div>
 			<div class="filterKey"> </div>
 		</div>
-		<?php include('/php_search/LocationSections/LocationSections.php'); ?>
+		<?php include('php_search/LocationSections/LocationSections.php'); ?>
 	</ul>
 </div>

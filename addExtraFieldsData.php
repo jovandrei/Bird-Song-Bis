@@ -1,5 +1,5 @@
 <?php
-	require_once('/php/CommonSections/headerSection.php');
+	require_once('php/CommonSections/headerSection.php');
 	
 	/* RECOVER POST VARIABLES */
 	$index = $_POST['index'];

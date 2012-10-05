@@ -20,7 +20,7 @@
 		</span>		
 	</div>
 	
-	<?php include('/php/LocationSections/EnvironmentSection/WeatherSection/WeatherSection.php'); ?>
+	<?php include('php/LocationSections/EnvironmentSection/WeatherSection/WeatherSection.php'); ?>
 	
-	<?php include('/php/LocationSections/EnvironmentSection/VegetationSection/VegetationSection.php'); ?>
+	<?php include('php/LocationSections/EnvironmentSection/VegetationSection/VegetationSection.php'); ?>
 </li>

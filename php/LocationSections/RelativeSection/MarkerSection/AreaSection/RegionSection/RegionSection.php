@@ -1,7 +1,7 @@
 <li class="complex notranslate">
 
 	<label class="desc2" for="Region_<?php echo $index?>_id">IN REGION</label>
-	<?php echo options_section_in2("Region", $index); ?>
+	<?php echo options_section_in2("REGION", $index); ?>
 	
 	<div class='more-content-in'>
 		<span>
@@ -11,7 +11,7 @@
 	</div>
 	<div class='more-content-in'>
 		<span class="left">
-			<?php require_once('/php/CommonSections/contriesSelectionSection.php'); ?>
+			<?php require_once('php/CommonSections/contriesSelectionSection.php'); ?>
 			<label for="country_<?php echo $index?>_id">Country</label>
 		</span>
 		

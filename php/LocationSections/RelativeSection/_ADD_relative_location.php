@@ -15,13 +15,13 @@
 			<div id="extraRelativeLocation">
 				<?php
 					$index = 0; 
-					include('/php/LocationSections/RelativeSection/_SECTION_relative_location.php'); 
+					include('php/LocationSections/RelativeSection/_SECTION_relative_location.php'); 
 				?>	
 			</div>
 		</div>
 		<div>
 		<h5><INPUT TYPE=BUTTON OnClick="AddElement('nextRelativeLocation', '#extraRelativeLocation', 
-					'/php/LocationSections/RelativeSection/_SECTION_relative_location.php');" 
+					'php/LocationSections/RelativeSection/_SECTION_relative_location.php');" 
 					VALUE="+1 Add one Marker" class="right small boton"></h5>
 		</div>
 		<a href="#" tabindex="-1" class="invisible"> ------------------------------------------------------ </a>
