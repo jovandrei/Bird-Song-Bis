@@ -40,9 +40,7 @@
 							<div class="post-content">
 								<div class="clear"></div>
 								<p>&nbsp;</p>
-								<p>Complete the sentences using one of the following Relative pronouns &nbsp;
-									<a href="#" class="read-more">read more</a>
-								</p>
+								<p>UNDER CONSTRUCTION</p>
 							</div>	
 						</div><!--.post-single-->
 						
@@ -54,9 +52,7 @@
 							<div class="post-content">
 								<div class="clear"></div>
 								<p>&nbsp;</p>
-								<p>Complete the sentences using one of the following Relative pronouns &nbsp;
-									<a href="#tabs-2" class="read-more">Read more</a>
-								</p>
+								<p>UNDER CONSTRUCTION</p>
 							</div>	
 						</div><!--.post-single-->
 						
@@ -68,9 +64,7 @@
 							<div class="post-content">
 								<div class="clear"></div>
 								<p>&nbsp;</p>
-								<p>Complete the sentences using one of the following Relative pronouns &nbsp;
-									<a href="#" class="read-more">read more</a>
-								</p>
+								<p>UNDER CONSTRUCTION</p>
 							</div>	
 						</div><!--.post-single-->
 						
@@ -82,9 +76,7 @@
 							<div class="post-content">
 								<div class="clear"></div>
 								<p>&nbsp;</p>
-								<p>Complete the sentences using one of the following Relative pronouns &nbsp;
-									<a href="#" class="read-more">read more</a>
-								</p>
+								<p>UNDER CONSTRUCTION</p>
 							</div>	
 						</div><!--.post-single-->
 						
@@ -96,9 +88,7 @@
 							<div class="post-content">
 								<div class="clear"></div>
 								<p>&nbsp;</p>
-								<p>Complete the sentences using one of the following Relative pronouns &nbsp;
-									<a href="#" class="read-more">read more</a>
-								</p>
+								<p>UNDER CONSTRUCTION</p>
 							</div>	
 						</div><!--.post-single-->
 						

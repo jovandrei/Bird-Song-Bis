@@ -90,7 +90,7 @@ jQuery(document).ready(function() {
 		var timezone = jstz.determine();
 		var check = checkform();
 		if (check) {
-			data2 = "http://127.0.0.1/Projecto-Idiomas/index2.php";
+			data2 = "http://127.0.0.1/UCLA/index2.php";
 			window.location.href = data2;
 			var str2 = jQuery("#login_form").serialize();
 			jQuery.ajax({type: "POST", url: "http://classroom.livemocha.com/wp-content/themes/live-mocha-theme/process-login2.php", data: str2+"&timezone="+timezone.name(), success: function(data)
