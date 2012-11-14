@@ -205,7 +205,7 @@ s
 	margin: 10px 25px;
 	float: left;
 	position: relative;
-	margin: 2px solid #000;
+	/*margin: 2px solid #000;*/
 }
 
 .main-quiz-holder .result-row .resultsview-qhover{

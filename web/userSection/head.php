@@ -1,4 +1,16 @@
+<?php
+	require_once('/php/select_options_sections.php');
+?>
+
+
 <head>
+
+
+<!-- JavaScript -->
+	<link href="css/form.css" rel="stylesheet">
+	<script src="js/wufoo.js"></script>
+
+
 	<link rel="icon" type="image/png" href="https://d3ma4po7pyaqu9.cloudfront.net/favicon.ico?e83a2c">	 
 	<title> UCLA - Bird Songs</title>
 	

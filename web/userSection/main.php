@@ -11,6 +11,7 @@
 	<div class="container">
 		<div id="content">
 			<div class="equal_height">	
+			
 				<div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
 					<div class="blog_subhead">
 						<div class="blog_icon">
@@ -32,30 +33,80 @@
 					</div>
 					
 					<div id="tabs-1" class="tabs-content ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide2">
-						<div class="post-single">
-							<div class="post-single-border-none"></div>
-							<h1 class="archive"><a href="#" title="Drag & Drop">General Information</a></h1>				
-							<div class="line"></div>
-				
-							<div class="post-content">
-								<div class="clear"></div>
-								<p>&nbsp;</p>
-								<p>UNDER CONSTRUCTION</p>
-							</div>	
-						</div><!--.post-single-->
+					
+						<div><!--starts General Information-->
+							<div class="post-single">
+								<div class="post-single-border-none"></div>
+								<h1 class="archive"><a href="#" title="General Information">General Information</a></h1>				
+								<div class="line"></div>
+					
+								<div class="post-content">
+									<div class="clear"></div>
+									<p>&nbsp;</p>
+									<p>UNDER CONSTRUCTION</p>
+								</div>	
+							</div>
+						</div><!--ends General Information-->
 						
-						<div class="post-single">
-							<div class="post-single-border-none"></div>
-							<h1 class="archive"><a href="#" title="Drag & Drop">Absolute Location</a></h1>				
-							<div class="line"></div>
-				
-							<div class="post-content">
-								<div class="clear"></div>
-								<p>&nbsp;</p>
-								<p>UNDER CONSTRUCTION</p>
-							</div>	
-						</div><!--.post-single-->
-						
+						<div><!--starts Absolute Location-->
+							<div class="post-single">
+								<div class="post-single-border-none"></div>
+								<h1 class="archive"><a href="#" title="Drag & Drop">Absolute Location</a></h1>				
+								<div class="line"></div>
+							</div><!--.post-single-->
+							
+							<li class="complex notranslate">
+								<div>
+									<span>
+										<input id="latitude_degrees_<?php echo $index?>_id" name="latitude_degrees_<?php echo $index?>" type="text" class="field text addr" value="" size="5" />
+										<label  class ="nojumpBig" for="latitude_degrees_<?php echo $index?>_id">°</label>
+										
+										<input id="latitude_minutes_<?php echo $index?>_id" name="latitude_minutes_<?php echo $index?>" type="text" class="field text addr" value="" size="5" />
+										<label  class ="nojumpBig" for="latitude_minutes_<?php echo $index?>_id">'</label>
+										
+										<input id="latitude_seconds_<?php echo $index?>_id" name="latitude_seconds_<?php echo $index?>" type="text" class="field text addr" value="" size="5" />
+										<label  class ="nojumpBig" for="latitude_seconds_<?php echo $index?>_id">"</label>
+										
+										<select id="latitude_orientation_<?php echo $index?>_id" name="latitude_orientation_<?php echo $index?>" class="field select addr">
+											<option value="N" selected="selected">N</option>
+											<option value="S" >S</option>
+										</select>
+											
+										<label for="latitude_degrees_<?php echo $index?>_id">Latitude</label>
+									</span>	
+								</div>
+								
+								<div>
+									<span>
+										<input id="longitude_degrees_<?php echo $index?>_id" name="longitude_degrees_<?php echo $index?>" type="text" class="field text addr" value="" size="5" />
+										<label  class ="nojumpBig" for="longitude_degrees_<?php echo $index?>_id">°</label>
+										
+										<input id="longitude_minutes_<?php echo $index?>_id" name="longitude_minutes_<?php echo $index?>" type="text" class="field text addr" value="" size="5" />
+										<label  class ="nojumpBig" for="longitude_minutes_<?php echo $index?>_id">'</label>
+										
+										<input id="longitude_seconds_<?php echo $index?>_id" name="longitude_seconds_<?php echo $index?>" type="text" class="field text addr" value="" size="5" />
+										<label  class ="nojumpBig" for="longitude_seconds_<?php echo $index?>_id">"</label>
+										
+										<select id="longitude_orientation_<?php echo $index?>_id" name="longitude_orientation_<?php echo $index?>" class="field select addr">
+											<option value="W" selected="selected">W</option>
+											<option value="E" >E</option>
+										</select>
+										
+										<label for="longitude_degrees_<?php echo $index?>_id">Longitude</label>
+									</span>
+								</div>
+								
+								<div>
+									<span>
+										
+										<input id="elevation_<?php echo $index?>_id" name="elevation_<?php echo $index?>" type="text" class="field text addr" value="" size="20" />
+										<label  class ="nojump" for="elevation_<?php echo $index?>_id">m.</label>
+										<label for="elevation_<?php echo $index?>_id">Elevation</label>
+									</span>
+								</div>
+							</li>
+						</div> <!--ends Absolute Location-->		
+												
 						<div class="post-single">
 							<div class="post-single-border-none"></div>
 							<h1 class="archive"><a href="#" title="Drag & Drop">Relative Location</a></h1>				
