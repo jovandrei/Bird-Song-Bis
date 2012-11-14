@@ -15,7 +15,17 @@
 									<span class="icl_lang_sel_native"></span>
 									<span class="icl_lang_sel_translated">
 										<span class="icl_lang_sel_native">(</span>
-										Add new user
+										Add new users
+										<span class="icl_lang_sel_native">)</span>
+									</span>
+								</a>
+			                </li>
+			                <li class="icl-ru">          
+								<a rel="alternate" hreflang="ru" href="#">
+									<span class="icl_lang_sel_native"></span>
+									<span class="icl_lang_sel_translated">
+										<span class="icl_lang_sel_native">(</span>
+										Others
 										<span class="icl_lang_sel_native">)</span>
 									</span>
 								</a>

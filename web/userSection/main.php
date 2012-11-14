@@ -34,7 +34,7 @@
 					
 					<div id="tabs-1" class="tabs-content ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide2">
 					
-						<div><!--starts General Information-->
+						<div>
 							<div class="post-single">
 								<div class="post-single-border-none"></div>
 								<h1 class="archive"><a href="#" title="General Information">General Information</a></h1>				
@@ -51,7 +51,7 @@
 							</li>
 						</div><!--ends General Information-->
 						
-						<div><!--starts Absolute Location-->
+						<div>
 							<div class="post-single">
 								<div class="post-single-border-none"></div>
 								<h1 class="archive"><a href="#" title="Drag & Drop">Absolute Location</a></h1>				
@@ -110,29 +110,79 @@
 							</li>
 						</div> <!--ends Absolute Location-->		
 												
-						<div class="post-single">
-							<div class="post-single-border-none"></div>
-							<h1 class="archive"><a href="#" title="Drag & Drop">Relative Location</a></h1>				
-							<div class="line"></div>
-				
-							<div class="post-content">
-								<div class="clear"></div>
-								<p>&nbsp;</p>
-								<p>UNDER CONSTRUCTION</p>
-							</div>	
-						</div><!--.post-single-->
+						<div>
+							<div class="post-single">
+								<div class="post-single-border-none"></div>
+								<h1 class="archive"><a href="#" title="Relative Location">Relative Location</a></h1>				
+								<div class="line"></div>	
+							</div>
+							
+							<li class="complex notranslate">		
+								<div>
+									<span>
+										<label class ="nojump" for="relativeDistance<?php echo "_".$index?>_id">Recorded</label>
+										<input id="relativeDistance<?php echo "_".$index?>_id" name="relativeDistance<?php echo "_".$index?>" type="text" class="field text addr" value="" size="20" />
+										<label class ="nojump" for="relativeDistance<?php echo "_".$index?>_id">m.</label>
+									</span>
+									<span class="right">
+											<select id="relativePosition<?php echo "_".$index?>_id" name="relativePosition<?php echo "_".$index?>" class="field select addr" >
+												<option value="up hill" selected="selected">up hill</option>
+												<option value="along">along</option>
+												<option value="from">from</option>
+												<option value="up road">up road</option>
+												<option value="down road">down road</option>
+												<option value="N">N</option>
+												<option value="W" >W</option>
+												<option value="S" >S</option>
+												<option value="E" >E</option>
+												<option value="NW" >NW</option>
+												<option value="NE" >NE</option>
+												<option value="SW" >SW</option>
+												<option value="SE" >SE</option>
+											</select>
+											
+									</span>
+									
+								</div>
+								<div>
+									<span>
+										<label for="marker<?php echo "_".$index?>_id">From MARKER:</label>
+									</span>
+								</div>
+								<?php echo options_section_in2("Marker", 0); ?>
+							</li>
+						</div><!--ends Relative Location-->
 						
-						<div class="post-single">
-							<div class="post-single-border-none"></div>
-							<h1 class="archive"><a href="#" title="Drag & Drop">Environment</a></h1>				
-							<div class="line"></div>
-				
-							<div class="post-content">
-								<div class="clear"></div>
-								<p>&nbsp;</p>
-								<p>UNDER CONSTRUCTION</p>
-							</div>	
-						</div><!--.post-single-->
+						<div>
+							<div class="post-single">
+								<div class="post-single-border-none"></div>
+								<h1 class="archive"><a href="#" title="Environment">Environment</a></h1>				
+								<div class="line"></div>	
+							</div>
+							<li class="complex notranslate">
+								<div>
+									<span>
+										<label for="marker<?php echo "_".$index?>_id">WEATHER:</label>
+									</span>
+								</div>
+								<?php echo options_section_in2("weather", 0); ?>
+								
+								<div>
+									<span>
+										<label for="marker<?php echo "_".$index?>_id">VEGETATION:</label>
+									</span>
+								</div>
+								<?php echo options_section_in2("vegetation", 0); ?>
+								
+								<div>
+									<span>
+										<textarea id="EnvironmentDescription_0_id"  name="EnvironmentDescription_0" 
+											class="field select addr" spellcheck="true" rows="1" cols="70" onkeyup=""></textarea>
+										<label for="EnvironmentDescription_0_id">Environment Description</label>
+									</span>		
+								</div>
+							</li>
+						</div><!--ends Environment-->
 						
 						<div class="post-single">
 							<div class="post-single-border-none"></div>
@@ -146,6 +196,11 @@
 							</div>	
 						</div><!--.post-single-->
 						
+						<li class="buttons">
+							<div>
+								<button id="saveForm" name="saveForm" class="btTxt" type="submit" value="Submit">Add</button>
+							</div>
+						</li>
 					</div>
 	
 					<div id="tabs-2" class="tabs-content ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide2">
@@ -169,4 +224,13 @@
 		<?php include('sidebar.php');?>
 		<div class="clear"></div>
 	</div><!--.container-->
+	
+	<div id="header">
+		<header>
+			<div class="container container_header">	
+				<div id="title"></div><!--#title-->			
+				<div class="clear"></div>
+			</div><!--.container-->
+		</header>
+	</div><!--#header-->
 </div><!--#main-->

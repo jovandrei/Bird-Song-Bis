@@ -1,0 +1,13 @@
+button.btTxt
+{
+	clear:both;
+	margin-left:590px;
+	width:125px;
+	height:31px;
+	background:#01ac9b url(../images/backgr.jpg) no-repeat;
+	text-align:center;
+	line-height:31px;
+	color:#FFFFFF;
+	font-size:11px;
+	font-weight:bold;
+}

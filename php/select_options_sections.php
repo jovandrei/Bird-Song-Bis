@@ -150,7 +150,7 @@ function optionsCommon ($type, $index) {
 	$optionsAvailable = sectionData($type);
 	
 	$options = "id=\"$nameId\" name=\"$name\">
-					<option value=\"New\" selected=\"selected\">New $type</option>
+					<option value=\"New\" selected=\"selected\">Select $type</option>
 					<option value=\"\" disabled=\"disabled\">--------</option>
 					$optionsAvailable
 				</select>";

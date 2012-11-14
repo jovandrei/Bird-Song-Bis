@@ -1,5 +1,5 @@
 <?php
-	require_once('/php/select_options_sections.php');
+	require_once('php/select_options_sections.php');
 ?>
 
 
@@ -8,6 +8,7 @@
 
 <!-- JavaScript -->
 	<link href="css/form.css" rel="stylesheet">
+	<link href="css/structure.css" rel="stylesheet">
 	<script src="js/wufoo.js"></script>
 
 
