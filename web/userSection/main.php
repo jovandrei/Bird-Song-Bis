@@ -38,14 +38,17 @@
 							<div class="post-single">
 								<div class="post-single-border-none"></div>
 								<h1 class="archive"><a href="#" title="General Information">General Information</a></h1>				
-								<div class="line"></div>
-					
-								<div class="post-content">
-									<div class="clear"></div>
-									<p>&nbsp;</p>
-									<p>UNDER CONSTRUCTION</p>
-								</div>	
+								<div class="line"></div>	
 							</div>
+							<li class="complex notranslate">
+								<div>
+									<span>
+										<textarea id="locationDescription_0_id"  name="locationDescription_0" 
+											class="field select addr" spellcheck="true" rows="1" cols="70" onkeyup=""></textarea>
+										<label for="locationDescription_0_id">Location Description</label>
+									</span>		
+								</div>
+							</li>
 						</div><!--ends General Information-->
 						
 						<div><!--starts Absolute Location-->

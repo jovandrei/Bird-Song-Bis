@@ -139,8 +139,14 @@ h2 {
 	width				:	25%;
 }
 
-input, select, textarea {
+input, select{
 	width				:	20%;
+	padding				:	7px;
+	border				:	1px solid #CCC;
+}
+
+textarea{
+	width				:	100%;
 	padding				:	7px;
 	border				:	1px solid #CCC;
 }
