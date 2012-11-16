@@ -4,21 +4,24 @@ include('conexion.php');
 $link = Conectarse();
 
 $selectOptionElements = array(
-	"researcher"					=>	array ("first_name"," ",	"last_name"),
-	"Location"						=>	array (" "),
-	"absolute_location"				=>	array ("latitude_degrees","°",	"latitude_minutes","\"",	"latitude_seconds","'"," ",		"latitude_orientation",		", ",
-												"longitude_degrees","°","longitude_minutes","\"",	"longitude_seconds","'"," ",	"longitude_orientation",	", ",
-												"elevation", "m "),
-	"relative_location_has_marker"	=>	array ("distance",	" m ",	"position",
-												"$",		"MARKER_idMARKER",		"MARKER",	"name",		"$"),
-	"Marker"						=>	array ("name"),
-	"Area"							=>	array ("name"),
-	"Region"						=>	array ("name"),
-	"environment"					=>	array ("comments_features"),
-	"weather"						=>	array ("description"),
-	"vegetation"					=>	array ("vegetation_type"),
+	"researcher"						=>	array ("first_name"," ",	"last_name"),
+	"Location"							=>	array (" "),
+	"absolute_location"					=>	array ("latitude_degrees","°",	"latitude_minutes","\"",	"latitude_seconds","'"," ",		"latitude_orientation",		", ",
+													"longitude_degrees","°","longitude_minutes","\"",	"longitude_seconds","'"," ",	"longitude_orientation",	", ",
+													"elevation", "m "),
+	"relative_location_has_marker"		=>	array ("distance",	" m ",	"position",
+													"$",		"MARKER_idMARKER",		"MARKER",	"name",		"$"),
+	"Marker"							=>	array ("name"),
+	"Area"								=>	array ("name"),
+	"Region"							=>	array ("name"),
+	"environment"						=>	array ("comments_features"),
+	"weather"							=>	array ("description"),
+	"vegetation"						=>	array ("vegetation_type"),
 	"vegetation_has_vegetation_species"	=>	array ("average_density",	", "	, "projected_cover",	", ",	 "average_height"),
-	"vegetation_species"			=>	array ("scientific_name", 	", "	,"common_name")
+	"vegetation_species"				=>	array ("scientific_name", 	", "	,"common_name"),
+	"method"							=>	array ("description"),
+	"track_has_subject"					=>	array ("$",		"SUBJECT_idSUBJECT",	"SUBJECT",	"name",		"$",	", ",	"recording_date"),
+	"subject_species"					=>	array ("scientific_name", ", ", "common_name"),
   );
 
 // Metodo que jala de la BD todos los registros de la tabla $type

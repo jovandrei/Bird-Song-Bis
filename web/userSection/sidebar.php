@@ -51,13 +51,13 @@
 		<ul><h3>Forms</h3>
 			<ul>
 				<li class="cat-item cat-item-297">
-					<a href="#" title="View all posts filed under Diary of a Language Teacher">
+					<a href="_location.php" title="View all posts filed under Diary of a Language Teacher">
 						Location
 					</a>
 				</li>
 				
 				<li class="cat-item cat-item-336">
-					<a href="#" title="View all posts filed under Language in the workplace">
+					<a href="_analysis.php" title="View all posts filed under Language in the workplace">
 						Analysis
 					</a>
 				</li>
@@ -80,7 +80,7 @@
 					</a>
 					<ul class="children">
 						<li class="cat-item cat-item-18">
-							<a href="#" title="View all posts filed under Community">
+							<a href="_subject.php" title="View all posts filed under Community">
 								Subject
 							</a>
 						</li>
