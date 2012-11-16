@@ -1,5 +1,5 @@
 <head>
-	<link rel="icon" type="image/png" href="http://livemocha.com/favicon2.ico">
+	<link rel="icon" type="image/png" href="http://files.softicons.com/download/internet-icons/blue-jelly-social-icons-by-webtreatsetc/png/256/webtreatsetc-blue-jelly-twitter-bird2.png">
 	<title> UCLA - Bird Songs</title>
 		
 	<link rel="stylesheet" type="text/css" media="all" href="css/theme.css">

@@ -1,5 +1,5 @@
 <?php
-	require_once('php/select_options_sections.php');
+	require_once('../../php/select_options_sections.php');
 ?>
 
 
@@ -7,15 +7,15 @@
 
 
 <!-- JavaScript -->
-	<link href="css/form.css" rel="stylesheet">
-	<link href="css/structure.css" rel="stylesheet">
-	<script src="js/wufoo.js"></script>
+	<link href="../../css/form.css" rel="stylesheet">
+	<link href="../../css/structure.css" rel="stylesheet">
+	<script src="../../js/wufoo.js"></script>
 
 
-	<link rel="icon" type="image/png" href="https://d3ma4po7pyaqu9.cloudfront.net/favicon.ico?e83a2c">	 
+	<link rel="icon" type="image/png" href="http://files.softicons.com/download/internet-icons/blue-jelly-social-icons-by-webtreatsetc/png/256/webtreatsetc-blue-jelly-twitter-bird2.png">
 	<title> UCLA - Bird Songs</title>
 	
-	<link rel="stylesheet" type="text/css" media="all" href="css/theme.css">
+	<link rel="stylesheet" type="text/css" media="all" href="../../css/theme.css">
 	<link rel="stylesheet" type="text/css" media="all" href="https://d3ma4po7pyaqu9.cloudfront.net/wp-content/themes/live-mocha-theme/style.css?e83a2c">
 	
 	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300" rel="stylesheet" type="text/css">
