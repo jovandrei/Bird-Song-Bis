@@ -63,21 +63,19 @@
 				</li>
 				
 				<li class="cat-item cat-item-14">
-					<a href="#" title="View all posts filed under Teachers">
+					<a href="_track_has_subject.php" title="View all posts filed under Teachers">
 						Track has Subject
 					</a>
 				</li>
 				
 				<li class="cat-item cat-item-14">
-					<a href="#" title="View all posts filed under Teachers">
+					<a href="_track.php" title="View all posts filed under Teachers">
 						Track
 					</a>
 				</li>
 				
 				<li class="cat-item cat-item-14">
-					<a href="#" title="View all posts filed under Teachers">
-						Others
-					</a>
+					Others
 					<ul class="children">
 						<li class="cat-item cat-item-18">
 							<a href="_subject.php" title="View all posts filed under Community">

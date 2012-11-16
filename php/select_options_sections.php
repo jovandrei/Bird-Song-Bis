@@ -5,13 +5,14 @@ $link = Conectarse();
 
 $selectOptionElements = array(
 	"researcher"						=>	array ("first_name"," ",	"last_name"),
-	"Location"							=>	array (" "),
+	"location"							=>	array ("comment"),
 	"absolute_location"					=>	array ("latitude_degrees","°",	"latitude_minutes","\"",	"latitude_seconds","'"," ",		"latitude_orientation",		", ",
 													"longitude_degrees","°","longitude_minutes","\"",	"longitude_seconds","'"," ",	"longitude_orientation",	", ",
 													"elevation", "m "),
 	"relative_location_has_marker"		=>	array ("distance",	" m ",	"position",
 													"$",		"MARKER_idMARKER",		"MARKER",	"name",		"$"),
-	"Marker"							=>	array ("name"),
+	"Marker"							=>	array ("name", ", ", "description",	", ",
+													"$",		"AREA_idAREA",		"AREA",	"name",		"$"),
 	"Area"								=>	array ("name"),
 	"Region"							=>	array ("name"),
 	"environment"						=>	array ("comments_features"),
@@ -22,6 +23,10 @@ $selectOptionElements = array(
 	"method"							=>	array ("description"),
 	"track_has_subject"					=>	array ("$",		"SUBJECT_idSUBJECT",	"SUBJECT",	"name",		"$",	", ",	"recording_date"),
 	"subject_species"					=>	array ("scientific_name", ", ", "common_name"),
+	"recording_hardware"				=>	array ("type_of_device", ", ", "recorder"),
+	"subject"							=>	array ("name",			", "	, 
+													"$",	"SUBJECT_SPECIES_idSPECIES",	"SUBJECT_SPECIES",	"$"),
+	"track"								=>	array ("$",		"RESEARCHER_idRESEARCHER",		"RESEARCHER",	"first_name", "last_name",		"$")
   );
 
 // Metodo que jala de la BD todos los registros de la tabla $type

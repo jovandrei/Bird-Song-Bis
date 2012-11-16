@@ -69,19 +69,12 @@
 														</span>
 														<span class="right">
 																<select id="relativePosition<?php echo "_".$index?>_id" name="relativePosition<?php echo "_".$index?>" class="field select addr" >
-																	<option value="up hill" selected="selected">up hill</option>
-																	<option value="along">along</option>
-																	<option value="from">from</option>
-																	<option value="up road">up road</option>
-																	<option value="down road">down road</option>
-																	<option value="N">N</option>
-																	<option value="W" >W</option>
-																	<option value="S" >S</option>
-																	<option value="E" >E</option>
-																	<option value="NW" >NW</option>
-																	<option value="NE" >NE</option>
-																	<option value="SW" >SW</option>
-																	<option value="SE" >SE</option>
+																	<option value="up hill" selected="selected">Hermaphrodite(s)</option>
+																	<option value="along">Unkown sex</option>
+																	<option value="from">Female(s)</option>
+																	<option value="up road">Mixed sexes</option>
+																	<option value="down road">Asexual(s)</option>
+																	<option value="N">Male(s)</option>
 																</select>
 																<label for="latitude_degrees_<?php echo $index?>_id">sex</label>
 														</span>
@@ -89,6 +82,76 @@
 															<input id="latitude_degrees_<?php echo $index?>_id" name="latitude_degrees_<?php echo $index?>" type="text" class="field text addr" value="" size="5" />
 															<label for="latitude_degrees_<?php echo $index?>_id">marked id</label>
 														</span>
+														<span class="right">
+																<select id="relativePosition<?php echo "_".$index?>_id" name="relativePosition<?php echo "_".$index?>" class="field select addr" >
+																	<option value="up hill" selected="selected">Independent immature</option>
+																	<option value="from">Reproductive adult</option>
+																	<option value="up road">Unkown age class</option>
+																	<option value="down road">Mixed ages</option>
+																	<option value="N">Subadult</option>
+																	<option value="N">Dependent immature</option>
+																</select>
+																<label for="latitude_degrees_<?php echo $index?>_id">age class</label>
+														</span>
+														
+														<span class="left">
+																<select id="relativePosition<?php echo "_".$index?>_id" name="relativePosition<?php echo "_".$index?>" class="field select addr" >
+																	<option value="up hill" selected="selected">Member(s) of polygynandrous group</option>
+																	<option value="from">Member(s) of male lek</option>
+																	<option value="up road">Member(s) of mated pair</option>
+																	<option value="down road">Member(s) of mating swarm</option>
+																	<option value="N">Member(s) of breeding colony</option>
+																	<option value="N">Member(s) of hermaphrodite cluster</option>
+																	<option value="N">Member(s) of polygynous group</option>
+																	<option value="N">Non-breeding helper(s)</option>
+																	<option value="N">Non-breeding individual(s)</option>
+																	<option value="N">Satellite male(s)</option>
+																	<option value="N">Single animal agent</option>
+																	<option value="N">Unkown</option>
+																</select>
+																<label for="latitude_degrees_<?php echo $index?>_id">breeding status</label>
+														</span>
+														
+														<span class="right">
+																<select id="relativePosition<?php echo "_".$index?>_id" name="relativePosition<?php echo "_".$index?>" class="field select addr" >
+																	<option value="Member(s) mixed species group" selected="selected">Member(s) mixed species group</option>
+																	<option value="Member(s) all female group">Member(s) all female group</option>
+																	<option value="Member(s) family">Member(s) family</option>
+																	<option value="Member(s) male/female pair">Member(s) male/female pair</option>
+																	<option value="Member(s) mixed sex group">Member(s) mixed sex group</option>
+																	<option value="Member(s) all-male group">Member(s) all-male group</option>
+																	<option value="N">Unkown</option>
+																</select>
+																<label for="latitude_degrees_<?php echo $index?>_id">non breeding status</label>
+														</span>
+														
+														<span class="left">
+																<select id="relativePosition<?php echo "_".$index?>_id" name="relativePosition<?php echo "_".$index?>" class="field select addr" >
+																	<option value="Passively mobile" selected="selected">Passively mobile</option>
+																	<option value="Territory intruder">Territory intruder</option>
+																	<option value="Tolerated visitor">Tolerated visitor</option>
+																	<option value="En route migrant">En route migrant</option>
+																	<option value="Sessile or torpid">Sessile or torpid</option>
+																	<option value="Territory resident">Territory resident</option>
+																	<option value="Non-territorial resident">Non-territorial resident</option>
+																</select>
+																<label for="latitude_degrees_<?php echo $index?>_id">site status</label>
+														</span>
+														
+														<span class="right">
+																<select id="relativePosition<?php echo "_".$index?>_id" name="relativePosition<?php echo "_".$index?>" class="field select addr" >
+																	<option value="sight" selected="selected">sight</option>
+																	<option value="sound">sound</option>
+																	<option value="sight and sound">sight and sound</option>
+																</select>
+																<label for="latitude_degrees_<?php echo $index?>_id">breeding status</label>
+														</span>
+									
+														<span class="left">
+															<input id="latitude_degrees_<?php echo $index?>_id" name="latitude_degrees_<?php echo $index?>" type="text" class="field text addr" value="" size="5" />
+															<label for="latitude_degrees_<?php echo $index?>_id">certainty of species</label>
+														</span>
+														
 														<span>
 															<textarea id="fileComment_0_id"  name="locationDescription_0" 
 																class="field select addr" spellcheck="true" rows="1" cols="70" onkeyup=""></textarea>
