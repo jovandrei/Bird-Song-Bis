@@ -78,7 +78,7 @@
 
     <repositories>
     <repository>
-      <url>http://download.java.net/maven/2/</url>
+      <url>http://java.sun.com/products/jdbc/download.html</url>
       <id>hibernate-support</id>
       <layout>default</layout>
       <name>Repository for library Library[hibernate-support]</name>
